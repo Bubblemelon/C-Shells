@@ -10,3 +10,5 @@ y is the sum of N and M, and z is the product of N and M.
 `gcc -lstdc++ InOut.cpp -o InOut` or `g++ InOut.cpp -o InOut`  
 
 `./InOut < InOut-inputs.txt`  
+
+[Go to Question Source](https://code.google.com/codejam/resources/quickstart-guide)
