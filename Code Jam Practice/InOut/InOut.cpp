@@ -21,6 +21,8 @@ int main() {
 
   cin >> t; // reads the number of lines (from an input file)
 
+  // usage of ++i: https://stackoverflow.com/questions/24853/what-is-the-difference-between-i-and-i
+  // ++i and i++ in this for loop will operate the same:
   for(int i = 1; t >= i; ++i)
   {
     cin >> n >> m; // read n and then m on the same line
