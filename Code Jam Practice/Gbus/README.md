@@ -32,8 +32,15 @@ Case #1: 2 1
 
 **Compile + Run**:  
 
-`` or ``  
+`g++ Gbus.cpp`  
 
-``  
+`d`  
 
-[Go to Question Source](https://code.google.com/codejam/contest/4374486/dashboard)
+[Go to Question Source](https://code.google.com/codejam/contest/4374486/dashboard)   
+
+**I/O Files:**  
+
+Sample.in - The sample input provided on the question page.  
+A-small-practice.in - original small input file.   
+A-large-practice.in - original large input file.   
+[Their respective output files are of the same name but with the ".txt" extension]  
