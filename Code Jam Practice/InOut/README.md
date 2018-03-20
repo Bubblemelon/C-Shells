@@ -13,6 +13,6 @@ y is the sum of N and M, and z is the product of N and M.
 
 To have the outputs placed onto a file:  
 
-`./InOut < InOut-inputs.txt > InOut-output.txt `
+`./InOut < InOut-inputs.txt > InOut-output.txt`
 
 [Go to Question Source](https://code.google.com/codejam/resources/quickstart-guide)  
