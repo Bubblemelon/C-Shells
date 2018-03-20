@@ -10,6 +10,9 @@ int main()
 
   // ">>" will skip whitespace by default
   //
+  // the >> operator of std::istream read space separated strings
+  // https://stackoverflow.com/questions/30005015/whats-the-difference-between-getline-and-stdistreamoperator
+  //
   // puts value into case_num
   std::cin >> case_num;
 

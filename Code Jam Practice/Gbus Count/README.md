@@ -1,6 +1,5 @@
-# Problem Statement for InOut.cpp:  
-
 # Problem Statement for GBus.cpp:  
+
 There exists a straight line along which cities are built.
 
 Each city is given a number starting from 1. So if there are 10 cities, city 1 has a number 1, city 2 has a number 2,... city 10 has a number 10.
@@ -9,7 +8,7 @@ Different buses (named GBus) operate within different cities, covering all the c
 
 We are given the cities covered by all the GBuses. We need to find out how many GBuses go through a particular city.
 
-# Input Explained:
+# Input Explained:  
 
 ```
 1 // number of test cases (T)
@@ -20,7 +19,7 @@ We are given the cities covered by all the GBuses. We need to find out how many 
 25 // Count #2: Find out how many GBuses goes through City #25
 ```
 
-# Output Explained:
+# Output Explained:  
 
 ```
 Case #1: 2 1
@@ -34,13 +33,17 @@ Case #1: 2 1
 
 `g++ Gbus.cpp`  
 
-`d`  
+`./a < sample.in`  
+
+To have the outputs placed onto a file:  
+
+`./a < sample.in > sample.txt`  
 
 [Go to Question Source](https://code.google.com/codejam/contest/4374486/dashboard)   
 
 **I/O Files:**  
 
-Sample.in - The sample input provided on the question page.  
+sample.in - The sample input provided on the question page.  
 A-small-practice.in - original small input file.   
 A-large-practice.in - original large input file.   
 [Their respective output files are of the same name but with the ".txt" extension]  
