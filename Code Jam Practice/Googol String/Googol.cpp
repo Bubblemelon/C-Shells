@@ -104,8 +104,8 @@ std::string reverseNSwitch( std::string sn_1 )
 
 int main(int argc, char const *argv[])
 {
-
-
+  // finish in the weekend
+  //
   // stores the iteration inputs
   std::string input;
 
