@@ -4,50 +4,10 @@
 #include <string> // allow for string type
 #include <algorithm> // allows for string reversal: https://www.geeksforgeeks.org/reverse-a-string-in-c-cpp-different-methods/
 
-// this method generates the sequence:
-char googol( std::string kth )
-{
-  // requires C++ 11
-  //
-  // stores S_N's (may need to add 1)
-  int n = stoi( kth );
-
-  // IMPORTANT:
-  //
-  // Kth starts from 1, being the 1st character of S_googol which is '0'
-  //
-  // When N = 0 S_N = ""
-  // When N = 1 S_N = '0`
-
-  // starting string
-  std::string sn = "";
-
-  if( n == 1 )
-  {
-    std::cout << "N is less is equal to 1: " << n;
-    // if Kth == 1
-    return '0';
-  }
-
-  // since N is more than 1
-  sn += "0";
-
-  // recursion
-  if( n > 1 )
-  {
-    std::cout << "N more than 1: " << n;
-
-    sn = "0"; //function call
-  }
-
-  return 'e'; // needs to be changed
-
-} // googol()
-
 // this method does the reversing and then switching part of the sequence
 std::string reverseNSwitch( std::string sn_1 )
 {
-    std::cout << "Before reversal sn_1: " << sn_1 << std::endl;
+    // std::cout << "Before reversal sn_1: " << sn_1 << std::endl;
 
     // using built in reverse function - stored into sn_1
     //
@@ -55,9 +15,9 @@ std::string reverseNSwitch( std::string sn_1 )
     // e.g. reverse 001 becomes 100
     std::reverse( sn_1.begin(), sn_1.end() );
 
-    std::cout << "sn_1 is now reversed: " << sn_1 << std::endl;
+    // std::cout << "sn_1 is now reversed: " << sn_1 << std::endl;
 
-    // coverting to Char array - C string
+    // Coverting to Char array, a "C string" from a string
     // https://www.geeksforgeeks.org/convert-string-char-array-cpp/
 
     // length of reversed sn_1 "+ 1" to include the terminating null-character ('\0') at the end
@@ -85,27 +45,118 @@ std::string reverseNSwitch( std::string sn_1 )
     }
 
     // Just for printing the result for having done switching
-    // -1 to not print \0
-    for(int j = 0; (char_array_size - 1) > j; ++j)
-    {
-      if( j == 0 )
-        std::cout << "Printing Switched sequence:" << std::endl;
+    // "-1" to not print \0
+    //
+    // for(int j = 0; (char_array_size - 1) > j; ++j)
+    // {
+    //   if( j == 0 )
+    //     std::cout << "Printing Switched sequence:" << std::endl;
+    //
+    //   std::cout << char_array[j];
+    //
+    //   if( j == char_array_size - 2 )
+    //     std::cout << std::endl;
+    // }
 
-      std::cout << char_array[j];
 
-      if( j == char_array_size - 2 )
-        std::cout << std::endl;
-    }
+    // Convert the reversed+switched char array to a string
+    //
+    // https://stackoverflow.com/questions/8960087/how-to-convert-a-char-array-to-a-string
+    //
+    std::string return_string(char_array);
 
-
-    return ""; // needs to be changed
+    return return_string;
 
 }// reverseNSwitch()
 
+
+// this method generates the sequence:
+char googol( std::string kth )
+{
+  // requires C++ 11
+  //
+  // stores S_N's (may need to add 1)
+  int n = stoi( kth );
+
+  // IMPORTANT:
+  //
+  // Kth starts from 1, being the 1st character of S_googol which is '0'
+  //
+  // When N = 0 S_N = ""
+  // When N = 1 S_N = '0`
+
+
+  /* SECTION for IMPROVEMENT:
+   *
+  // Check if this function has been called before (if true)
+  // and then see if the current "n" is smaller than g_char_array_size:
+  //
+  // if( googolfunc_called_b4 )
+  // {
+  //   if( n > 1 )
+  //   {
+  //     return g_char_array[n-1]; // this array needs to be dynamically allocated
+  //   }
+  // }
+  *
+  */
+
+
+  // starting string
+  std::string sn = "";
+
+  if( n == 1 ) // this is S_0
+  {
+    // std::cout << "N is less is equal to 1: " << n << std::endl;
+    // if Kth == 1
+    return '0';
+  }
+
+
+  // recursion
+  if( n > 1 )
+  {
+    // since N is more than 1 (this is S_1)
+    sn += "0";
+
+    // std::cout << "N more than 1: " << n << std::endl;
+
+    for(int i = 1; n > i; ++i)
+    {
+      // find the reverseNSwitch portion
+
+      // std::cout << "sn before: " << sn << std::endl;
+
+      sn += "0" + reverseNSwitch( sn );
+
+      // std::cout << "sn after: " << sn << std::endl;
+    }
+
+
+  }
+
+  // Convert the completed sequnce of sn into a char array
+  //
+  // perhaps it's not necessary to include null terminator
+  int g_char_array_size = sn.length() + 1;
+  char g_char_array[ g_char_array_size ];
+
+  // copying the contents of sn
+  // to g_char_array
+  std::strcpy( g_char_array, sn.c_str() );
+
+  // std::cout << "The Element requested an postion " << n << " is: " << g_char_array[n-1] <<std::endl;
+
+  // "-1" because the first element of the array is counted as 1 (not zero)
+  //
+  return g_char_array[n-1] ; // returns the a char type element at position n
+
+} // googol()
+
+
+
 int main(int argc, char const *argv[])
 {
-  // finish in the weekend
-  //
   // stores the iteration inputs
   std::string input;
 
@@ -134,11 +185,11 @@ int main(int argc, char const *argv[])
     // get the lines after the case number line
     std::getline(input_file, input);
 
-    std::cout << "Case #"<< i << ":";
+    std::cout << "Case #"<< i << ": ";
 
     // put input into function call
 
-    reverseNSwitch(input);
+    std::cout << googol(input) << std::endl;
 
     // exit while loop when end of file is reached
     //
