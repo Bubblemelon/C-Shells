@@ -3,6 +3,10 @@
 #include <sstream> // to convert string to ints/doubles/floats
 #include <string> // allow for string type
 #include <algorithm> // allows for string reversal: https://www.geeksforgeeks.org/reverse-a-string-in-c-cpp-different-methods/
+#include <cmath> // round() https://www.programiz.com/cpp-programming/library-function/cmath/round
+
+// Global Variable:
+int min_n_iterate_count = 0;
 
 // this method does the reversing and then switching part of the sequence
 std::string reverseNSwitch( std::string sn_1 )
@@ -69,6 +73,46 @@ std::string reverseNSwitch( std::string sn_1 )
 
 }// reverseNSwitch()
 
+// Finds the minumum S_N to iterate to inorder to find Kth Element within
+// that sequence.
+//
+// S_N = (S_N-1) * 2 + 1 <-- length of a "N" sequence
+//
+// Find N (as iterate_count) to get Kth element:
+// e.g.
+// 3th element will only need S_2, where N is 2 (S_2 length is 3)
+// Not S_3 because this one has 7 elements all together (or length 7), the other 4 is unnecessary
+//
+// IMPORTANT:
+//
+// sequence_length == kth element
+// (find the N that will generate up to kth element sequence or slightly more - NOT less than kth)
+//
+// Needs to be rounded because
+//
+int minSn( double sequence_length )
+{
+
+  if( sequence_length < 1 )// base case or "== 0" as long as less than 1
+  {
+    // std::cout << "sequence_length" << sequence_length << std::endl;
+
+    return min_n_iterate_count; // this needs to be reset for each find
+  }
+  else // recursion
+  {
+    min_n_iterate_count += 1;
+
+    // std::cout << "min_n_iterate_count" << min_n_iterate_count << std::endl;
+
+    sequence_length = minSn( std::round((sequence_length - 1) / 2) ) ;
+
+  }
+
+  return min_n_iterate_count; // this needs to be reset for each find
+
+} // minSn()
+
 
 // this method generates the sequence:
 char googol( std::string kth )
@@ -77,6 +121,9 @@ char googol( std::string kth )
   //
   // stores S_N's (may need to add 1)
   int n = stoi( kth );
+
+  // converty kth to an int
+  int kth_int = stoi( kth );
 
   // IMPORTANT:
   //
@@ -101,6 +148,10 @@ char googol( std::string kth )
   *
   */
 
+  // function call for how much to iterate
+  n = minSn( static_cast<double>(n) );
+
+  // std::cout << n << std::endl;
 
   // starting string
   std::string sn = "";
@@ -113,7 +164,7 @@ char googol( std::string kth )
   }
 
 
-  // recursion
+
   if( n > 1 )
   {
     // since N is more than 1 (this is S_1)
@@ -149,7 +200,7 @@ char googol( std::string kth )
 
   // "-1" because the first element of the array is counted as 1 (not zero)
   //
-  return g_char_array[n-1] ; // returns the a char type element at position n
+  return g_char_array[kth_int - 1] ; // returns the a char type element at position n
 
 } // googol()
 
