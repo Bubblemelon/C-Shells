@@ -9,6 +9,8 @@ My Practice with C++ and C.
 - [`int main(int argc, char const *argv[])` Explained](https://stackoverflow.com/questions/3024197/what-does-int-argc-char-argv-mean)
 > Refer to the [main-args]() folder to test out this explanation.
 
+- [What is a Segmentation Fault?](https://stackoverflow.com/questions/2346806/what-is-a-segmentation-fault?rq=1)  
+
 - [Difference between `cin.getline` vs `getline]()` ](https://stackoverflow.com/questions/4872361/why-are-there-two-different-getline-functions-if-indeed-there-are)   
 > Global `getline()` works with C++ `std::string` objects
 >
@@ -25,6 +27,32 @@ My Practice with C++ and C.
 
 - [`>>` Operator skips whitespace](https://stackoverflow.com/questions/30005015/whats-the-difference-between-getline-and-stdistreamoperator)
 > the `>>` operator of `std::istream` reads space separated strings
+
+- [Convert a String to a `Char[]` Array](https://www.geeksforgeeks.org/convert-string-char-array-cpp/)  
+
+- [Convert a `Char[]` Array to a String](https://stackoverflow.com/questions/8960087/how-to-convert-a-char-array-to-a-string)  
+
+- [Convert a `string` to an `int`](https://www.geeksforgeeks.org/converting-strings-numbers-cc/)
+> `stringstream()`: converts strings of digits into ints, floats or doubles.  
+> `atoi()`: Only works on C-style strings (character array and string literals).  
+> `stoi()`: C++ 11 only compatible and works for both C++ strings and C style strings.
+
+- [Getting the Size of an Array](https://stackoverflow.com/questions/4108313/how-do-i-find-the-length-of-an-array)
+> One of the shortcuts listed in the above link:
+> `sizeof( myArray )` is total number of bytes allocated for that array.
+> `sizeof( myArray[0] )` is the number of bytes for one element.  
+>
+> `sizeof( myArray ) / sizeof( myArray[0] )` is the number of elements in the array.  
+
+- [Undeclared Identifier Error](https://stackoverflow.com/questions/22197030/what-is-an-undeclared-identifier-error-and-how-do-i-fix-it)  
+> e.g. when using a function above/before where it was defined in the script.   
+
+- [Type Casting in C vs in C++](https://stackoverflow.com/questions/103512/why-use-static-castintx-instead-of-intx)
+> e.g. C++ `static_cast<int>(x)` vs C `(int)x`  
+
+- [How to do Rounding in C++](https://www.programiz.com/cpp-programming/library-function/cmath/round
+)  
+> e.g. `round(0.5)` becomes `1`  
 
 
 -----
