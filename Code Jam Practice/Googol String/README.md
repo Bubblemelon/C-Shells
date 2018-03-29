@@ -60,4 +60,34 @@ To have the outputs placed onto a file:
 
 ``
 
-[Go to Question Source](https://code.google.com/codejam/contest/4374486/dashboard#s=p1)  
+[Go to Question Source](https://code.google.com/codejam/contest/4374486/dashboard#s=p1)
+
+-----
+**Googol Project File Status**:
+
+Segmentation Fault + Memory Leaks - `gdb` Output:
+
+```
+(gdb) file a.out
+Reading symbols from a.out...done.
+(gdb) run B-small-practice.i
+Starting program: /home/catbug/Desktop/C-Shells/Code Jam Practice/Googol String/a.out B-small-practice.i
+[Inferior 1 (process 6995) exited normally]
+(gdb) run B-small-practice.in
+Starting program: /home/catbug/Desktop/C-Shells/Code Jam Practice/Googol String/a.out B-small-practice.in
+Case #1: 0
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555555784 in reverseNSwitch (
+    sn_1="11011001110010011101100011001001110110011100100011011000110010011101100111001001110110001100100011011001110010001101100011001001110110011100100111011000110010011101100111001000110110001100100011011001"...) at Googol.cpp:35
+warning: Source file is more recent than executable.
+35	    std::strcpy( char_array, sn_1.c_str() );
+(gdb) quit
+
+```
+
+`a.out` Program works when kth is less than 100.   
+
+**Plan of Action**:
+
+Debug using Valgrind.  
