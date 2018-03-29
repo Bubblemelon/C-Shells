@@ -130,3 +130,22 @@ input_file.Open(argv[0]);
 
 input_file.close();  
 ```
+
+-----
+
+##### Tools:  
+
+<br/>
+`GNU gdb (GDB) 8.1`
+> Error encountered during usage:
+>
+> Unable to find Mach task port for process-id 7234: (os/kern) failure (0x5).
+ (please check gdb is codesigned - see taskgated(8))  
+>
+> **To resolve issue above**:  
+>
+>   [https://gcc.gnu.org/onlinedocs/gnat_ugn/Codesigning-the-Debugger.html](https://gcc.gnu.org/onlinedocs/gnat_ugn/Codesigning-the-Debugger.html)  
+>
+> [Same as above but more reader friendly on Github. ](https://github.com/cs01/gdbgui/issues/55)  
+>
+> [Same thing but from Apple open source.](https://opensource.apple.com/source/lldb/lldb-69/docs/code-signing.txt)
