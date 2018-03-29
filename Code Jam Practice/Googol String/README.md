@@ -52,13 +52,22 @@ Note: the 1st position starts at 1 not Zero.
 
 **Compile + Run**:  
 
-``g++ Googol.cpp`   
+```
+g++ Googol.cpp   
 
-``
+```
 
 To have the outputs placed onto a file:  
 
-``
+```
+g++ Googol.cpp sample.in > output.txt
+```
+
+To debug:
+
+```
+g++ Googol.cpp -g -Wall
+```
 
 [Go to Question Source](https://code.google.com/codejam/contest/4374486/dashboard#s=p1)
 
@@ -90,4 +99,7 @@ warning: Source file is more recent than executable.
 
 **Plan of Action**:
 
-Debug using Valgrind.  
+Debug using Valgrind.
+[Tips on Usage](https://stackoverflow.com/questions/5134891/how-do-i-use-valgrind-to-find-memory-leaks)  
+
+Refer to valgrind-out.txt. 
