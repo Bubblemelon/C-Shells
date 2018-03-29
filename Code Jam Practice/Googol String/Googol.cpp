@@ -4,6 +4,7 @@
 #include <string> // allow for string type
 #include <algorithm> // allows for string reversal: https://www.geeksforgeeks.org/reverse-a-string-in-c-cpp-different-methods/
 #include <cmath> // round() https://www.programiz.com/cpp-programming/library-function/cmath/round
+#include <cstring> // error on linux machine resolved by doing: https://stackoverflow.com/questions/2220795/error-strcpy-was-not-declared-in-this-scope
 
 // Global Variable:
 int min_n_iterate_count = 0;
