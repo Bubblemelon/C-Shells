@@ -21,8 +21,12 @@ class Transit
     std::string destination;
     int destination_repeat;
 
+    // to track the destinations checked
+    std::string *checker;
+    int check_count;
+
   public:
-    Transit( std::string des, int rep );  // constructor declaration
+    // Transit( std::string des, int rep );  // constructor declaration
 
     // Destrutor declaration & defintion is needed when:
     // dynamically allocated memory or pointer in class
@@ -40,19 +44,54 @@ class Transit
     void setDestination(std::string d) {destination = d;}
     void setRepeats(int r) {destination_repeat = r;}
 
+    // a function that finds the number of
+    // repeats for a specific destination within an array (takes des_array)
+    // use "this" to refer to class instance
+    //
+    // *& to avoid junk values (https://stackoverflow.com/questions/8056746/copying-from-one-dynamically-allocated-array-to-another-c)
+    void repeatFinder( std::string *&pt_array )
+    {
+      check_count = 1;
+      // this will be deleted and a new one created+resized for each new checked destination
+      checker = new std::string[check_count];
+
+      for(int i = 0; ( sizeof( pt_array ) / sizeof( pt_array[0] ) ) > i; ++i)
+      {
+        if( i == 0 && check_count == 1 )
+        {
+          this.setDestination = pt_array[i];
+          checker[check_count - 1] = pt_array[i];
+        }
+        else
+        {
+          for(int i = 0; check_count > i; ++i)
+          {
+          }
+        }
+
+        //reset check_count
+      }
+
+      // delete checker when done:
+      delete checker[];
+    }
+
 }; // dont forget semicolon for class
+
 
 // Member functions definitions are in the class itself
 //
-// Constructor definition below:
+// Constructor definition below: [TAKEN Out because of line: "Transit pairs_2d[ flight_num ][2];"]
+//
+// Transit::Transit( std::string des, int rep )
+// {
+//   std::cout << "Transit Object is created" << std::endl;
+//   destination = des;
+//   destination_repeat = rep;
+// }
 
-Transit::Transit( std::string des, int rep )
-{
-  std::cout << "Transit Object is created" << std::endl;
-  destination = des;
-  destination_repeat = rep;
-}
-
+// UnScrambler function definition:
+//
 // Cannot make an implicit copy of ifstream !
 // https://stackoverflow.com/questions/12432952/why-is-my-fstream-being-implicitly-deleted
 // Error:
@@ -90,13 +129,11 @@ void UnScrambler( std::ifstream &file )
     std::cout << des_array[i] << std::endl;
   }
 
-  delete des_array;
-
   // 2D Array
   // rows == number of pairs
   // column is always equal 2 as they are only pairs
   // needs to be deleted when done
-  // Transit pairs_2d[ flight_num ][2];
+  Transit pairs_2d[ flight_num ][2];
 
   // storing elements into 2D Array
   // for( int r = 0; flight_num > r; ++r )
@@ -107,6 +144,8 @@ void UnScrambler( std::ifstream &file )
   //   }
   // }
 
+  // free array when function is done
+  delete des_array;
 } // UnScrambler
 
 
