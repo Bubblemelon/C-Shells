@@ -102,4 +102,8 @@ warning: Source file is more recent than executable.
 Debug using Valgrind.
 [Tips on Usage](https://stackoverflow.com/questions/5134891/how-do-i-use-valgrind-to-find-memory-leaks)  
 
-Refer to valgrind-out.txt. 
+```
+valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes -v --log-file=valgrind-out.txt ./a.out B-small-practice.in
+
+```
+Refer to valgrind-out.txt.
