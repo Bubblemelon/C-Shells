@@ -45,7 +45,9 @@ There are two kinds of kind of subprograms, **void functions** and **value-retur
 > Function Heading:  
 > Its Formal Parameter List **must have the names of the variables/arguments specified**.
 
-**[Function Prototype](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions-proto)**: a function declaration that omits the body of the function (function body).
+##### [Function Prototype](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions-proto):  
+
+a function declaration that omits the body of the function (function body).
 > Also known as a _forward declaration_：
 >
 > **Function prototypes are usually placed at the top of the program** after preprocessor definitions/#include directives and before the _main_ function.
