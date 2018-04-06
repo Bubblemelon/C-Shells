@@ -144,7 +144,6 @@ input_file.close();
 
 #### [Tools](#tools):  
 
-<br/>
 `GNU gdb (GDB) 8.1`
 > Error encountered during usage:
 >
