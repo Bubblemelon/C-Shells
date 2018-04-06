@@ -4,13 +4,15 @@ contents:
 
 - [Functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions)  
 
-- [Header Files](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions#header-files)  
+- [Header Files](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#header-files)  
 
-- [Parameters](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions#parameters)
+- [Parameters](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#parameters)
 
-- [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions#preprocessor)    
+- [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)    
 
-### [Header Files](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions#header-files)  
+----- 
+
+### [Header Files](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#header-files)  
 
 Contains mostly of, [Function Prototypes](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#function-proto).  
 
@@ -30,6 +32,7 @@ By doing:
 `#include <headerfilename.h>`  
 > This tells the preprocessor to find the header file and insert the prototypes in to the program.   
 
+-----
 
 ### [Functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions):  
 
@@ -37,7 +40,7 @@ The definition of the _main_ function **usually appears first in a program**, fo
 
 **main Function**: Program entry and Controls the program. Returns either 1 or 0. Usually zero for a successful execution.   
 
-There are two kinds of kind of subprograms, [void functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions#void-funct) and **value-returning functions**.
+There are two kinds of kind of subprograms, [void functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#void-funct) and **value-returning functions**.
 
 **Function calls**: is a call to a function that results in the execution of the called function.
 > e.g. `FunctionName(ActualParameterList);`  
@@ -63,7 +66,7 @@ a function declaration that omits the body of the function (function body).
 >
 > The Formal Parameter List **must have the data types specified**, but **their variable names are optional**.
 
-##### [Void Functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions#void-funct)
+##### [Void Functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#void-funct)
 
 This function does not return a function value to its caller, so it does not finish with a return keyword.   
 
@@ -77,7 +80,9 @@ Should sound like an **action**. Name it as a verb or including a verb in in the
 >   
 > Can be used anywhere in the body of the function, to control the immediate exit of the void function and return to the caller.  
 
-#### [Parameters](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions#parameters)
+-----
+
+#### [Parameters](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#parameters)
 
 **Actual Parameter**:  
 Appears in a function call/invocation.   
@@ -159,7 +164,9 @@ The flow of a variable/value/parameter (information) from the calling code to a 
 | Outgoing/Output Parameter| **Pass-by-Reference**: <br/> goes out of the function; <br/><br/>Produces a new value for parameter without using the old value in anyway. |
 | Output & Input Parameter | **Pass-by-Reference**: <br/> two way direction; <br/><br/>Uses the old value and also produces a new value for the parameter.
 
-#### [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions#preprocessor)  
+-----
+
+#### [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)  
 
 A program that acts as a filter during the compilation phase.  
 
