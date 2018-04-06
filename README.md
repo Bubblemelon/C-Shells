@@ -2,9 +2,15 @@
 
 My Practice with C++ and C.
 
-## Notes + References:
+### Notes + References:  
 
-#### Links:  
+Contents:  
+- [Links](#links)
+- [Better Usage](#usage)
+- [Tools](#tools)
+- [Notes](#notes)
+
+#### [Links](#links):  
 
 - [`int main(int argc, char const *argv[])` Explained](https://stackoverflow.com/questions/3024197/what-does-int-argc-char-argv-mean)
 > Refer to the [main-args]() folder to test out this explanation.
@@ -56,7 +62,11 @@ My Practice with C++ and C.
 
 
 -----
-##### On using: `#include <fstream>`
+#### [Better Usage](#usage):  
+
+Mistakes on Usage Explained and Resolved.  
+
+##### When using: `#include <fstream>`
 
 Suppose you have a `file.txt` with the following content:  
 ```
@@ -108,11 +118,10 @@ Reasons:
 >  
 > Second, regardless of whether the above fix was made, the program now waits for a _user's input_ from `cin`. This loops forever, and will proceed to ask for a user's input forever (only if an int/number was given). If an anything other than a number was given, an infinite/forever loop of zeros will show.
 >
-> The infinite loop happens, because this program never reaches the end of files `argv[1]` or `argv[0]`.
+> The infinite loop happens, because this program never reaches the end of files `argv[1]` or `argv[0]`.  
 
 
------
-##### The ifstream Object  
+##### The ifstream Object   
 
 Use the constructor and let its destuctor do the work of opening and closing the file.  
 [source](https://stackoverflow.com/questions/13035674/how-to-read-line-by-line-or-a-whole-text-file-at-once)
@@ -133,7 +142,7 @@ input_file.close();
 
 -----
 
-##### Tools:  
+#### [Tools](#tools):  
 
 <br/>
 `GNU gdb (GDB) 8.1`
@@ -150,4 +159,6 @@ input_file.close();
 >
 > [Same thing but from Apple open source.](https://opensource.apple.com/source/lldb/lldb-69/docs/code-signing.txt)  
 
-`valgrind-3.13.0`
+`valgrind-3.13.0`  
+
+##### [Notes](#notes):
