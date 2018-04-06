@@ -10,7 +10,7 @@ contents:
 
 - [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)    
 
------ 
+-----
 
 ### [Header Files](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#header-files)  
 
@@ -38,14 +38,14 @@ By doing:
 
 The definition of the _main_ function **usually appears first in a program**, followed by the definitions of all other functions.
 
-**main Function**: Program entry and Controls the program. Returns either 1 or 0. Usually zero for a successful execution.   
+🎈 **main Function**: Program entry and Controls the program. Returns either 1 or 0. Usually zero for a successful execution.   
 
 There are two kinds of kind of subprograms, [void functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#void-funct) and **value-returning functions**.
 
-**Function calls**: is a call to a function that results in the execution of the called function.
+🎈 **Function calls**: is a call to a function that results in the execution of the called function.
 > e.g. `FunctionName(ActualParameterList);`  
 
-**Function Definition**: a function declaration that includes the body of the function.  
+🎈 **Function Definition**: a function declaration that includes the body of the function.  
 > Consists of two parts:
 > **Function Heading** and **Function Body**.  
 >
@@ -70,7 +70,7 @@ a function declaration that omits the body of the function (function body).
 
 This function does not return a function value to its caller, so it does not finish with a return keyword.   
 
-**Naming Conventions**:  
+🎈 **Naming Conventions**:  
 
 Should sound like an **action**. Name it as a verb or including a verb in in the naming.
 
@@ -82,14 +82,14 @@ Should sound like an **action**. Name it as a verb or including a verb in in the
 
 -----
 
-#### [Parameters](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#parameters)
+### [Parameters](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#parameters)
 
-**Actual Parameter**:  
+🎈 **Actual Parameter**:  
 Appears in a function call/invocation.   
 
 Its corresponding formal parameter may be either a _value or a reference parameter_. Look at **function calls** for an example.  
 
-**Formal Parameters**:  
+🎈 **Formal Parameters**:  
 
 There are two kinds of formal parameters.
 
@@ -127,7 +127,7 @@ Generates a compile-time error when, a reference parameter receives anything oth
 | A Function Call   | _Does not need to specify_ | `FunctionName`         | `( int_type_variable,` | `char_type_variable )` |
 |                   |                   |                      |  an Actual Parameter | an Actual Parameter  |
 
-**Note**:  
+🍱 **Note**:  
 
 If the data type of an actual parameter does not match with the **formal Value parameter**, then **implicit type coercion** takes place.
 > e.g. an actual parameter of a float type is coerced to an int type before it is passed to a function such as `FunctionName`.
@@ -147,14 +147,14 @@ If the data type of an actual parameter does not match with the **formal Referen
 >
 > Make sure that the data types of actual parameters match exactly with the formal parameters.
 
-**Efficiency** of **Passing-by-Value** and **Passing-by-Reference**:  
+🎈 **Efficiency** of **Passing-by-Value** and **Passing-by-Reference**:  
 
 Passing-by-value may occupy many memory locations, whereas passing-by-reference usually occupies a single location.  
 
 e.g. Simple data types such as, int, char and float have about the same efficiency for both.   
 
 
-**Parameter Data Flow**
+🎈 **Parameter Data Flow**
 
 The flow of a variable/value/parameter (information) from the calling code to a function and from the function back to the calling code.  
 
@@ -166,7 +166,7 @@ The flow of a variable/value/parameter (information) from the calling code to a 
 
 -----
 
-#### [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)  
+### [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)  
 
 A program that acts as a filter during the compilation phase.  
 
