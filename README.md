@@ -147,8 +147,8 @@ input_file.close();
 `GNU gdb (GDB) 8.1`
 > Error encountered during usage:
 >
-> Unable to find Mach task port for process-id 7234: (os/kern) failure (0x5).
- (please check gdb is codesigned - see taskgated(8))  
+> `Unable to find Mach task port for process-id 7234: (os/kern) failure (0x5).
+ (please check gdb is codesigned - see taskgated(8))`
 >
 > **To resolve issue above**:  
 >
@@ -160,4 +160,6 @@ input_file.close();
 
 `valgrind-3.13.0`  
 
-##### [Notes](#notes):
+#### [Notes](#notes):  
+
+- [Functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions)
