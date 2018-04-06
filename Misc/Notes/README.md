@@ -151,8 +151,13 @@ e.g. Simple data types such as, int, char and float have about the same efficien
 
 **Parameter Data Flow**
 
-The flow of a variable/value/parameter (information) from the calling code to a function and from the function back to the calling code.
+The flow of a variable/value/parameter (information) from the calling code to a function and from the function back to the calling code.  
 
+| Data Flow of a Parameter | Parameter Passing Mechanism/Method |
+| -------------------------| ---------------------------------- |
+| Incoming/Input Parameter | **Pass-by-Value**: <br/> passes into the function; <br/><br/>Only inspects and uses the current value of parameter but does not modify it. |
+| Outgoing/Output Parameter| **Pass-by-Reference**: <br/> goes out of the function; <br/><br/>Produces a new value for parameter without using the old value in anyway. |
+| Output & Input Parameter | **Pass-by-Reference**: <br/> two way direction; <br/><br/>Uses the old value and also produces a new value for the parameter.
 
 #### [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions#preprocessor)  
 
