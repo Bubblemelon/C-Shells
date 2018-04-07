@@ -14,7 +14,9 @@ contents:
 
 - [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)
 
-- [Scope of Identifiers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#scope)   
+- [Scope of Identifiers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#scope)
+
+- [Variables](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#variables)
 
 -----
 
@@ -226,6 +228,8 @@ The preprocessor expands an `#include` directive by physically inserting content
 
 ### [Scope of Identifiers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#scope)  
 
+The region of a program where it has legal reference to an identifier. Scope is a **compile-time** issue.
+
 The code below covers the following scopes:  
 
 1. local - identifiers declared within a block, extends the entire block from point of declaration.
@@ -264,3 +268,31 @@ Scopes not covered in the code above:
 3. class - identifiers declared within the class block, extends the entire block and [exceptions covered in this link](https://www.ibm.com/support/knowledgecenter/SS2LWA_12.1.0/com.ibm.xlcpp121.bg.doc/language_ref/cplr033.html).  
 
 4. non-local - identifiers declared outside a given block, i.e. if a block access any identifiers outside its own block has non-local acces.  
+
+-----
+
+### [Variables](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#variables)  
+
+**Variable Definitions**:  
+
+Reserves a memory location for a variable. There can be only one variable definition.
+> e.g. `int someInt;`  
+>
+> Both a declaration and a definition.  
+
+**Variable Declaration**:
+
+Most variable declarations are usually specifically known as Variable Definitions. Variable declarations can happen more than once.
+> e.g. `extern int someInt;`  
+>  
+> This declaration states that `someInt` is a global variable from another file, and that no additional storage should be reserved for it.
+>  
+> `someInt`\'s variable definition is located in that other file  
+>  
+> `extern` is a keyword allows references of global variables from another file.   
+
+**Variable Lifetimes**:
+
+The amount/period of time during a program execution that an identifier/variable has memory allocated to it. A **run-time** issue.
+
+1. Global Memory space - for global variables, allocated once and persists throughout the entire program runtime. So deallocates when program terminates.
