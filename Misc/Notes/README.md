@@ -295,4 +295,22 @@ Most variable declarations are usually specifically known as Variable Definition
 
 The amount/period of time during a program execution that an identifier/variable has memory allocated to it. A **run-time** issue.
 
-1. Global Memory space - for global variables, allocated once and persists throughout the entire program runtime. So deallocates when program terminates.
+Storage Classes/Types:  
+
+1. **Automatic Variables**   
+
+  - Storage is allocated at block entry  
+  - Deallocated at block exit  
+
+
+2. **Static Variables**  
+
+  - Storage allocation remains for the duration of the entire program runtime  
+  - Deallocated when program terminates  
+  - All Global variables are static variables  
+
+🍱 **Note**:  
+
+Local variables (declared within a block) are **automatic*** variables by default.
+
+Using `static` on a local variable, will allow its storage lifetime to persist from function call to call (this `static` local variable's value is retained from call to call).
