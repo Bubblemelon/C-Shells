@@ -6,8 +6,6 @@ contents:
 
 - [Header Files](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#header-files)
 
-- [Initialization in a Declaration](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#initialization)  
-
 - [Interface](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#interface)
 
 - [Parameters](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#parameters)
@@ -99,15 +97,7 @@ Should sound like an **action**. Name it as a verb or including a verb in in the
 > Can be used anywhere in the body of the function, to control the immediate exit of the void function and return to the caller.  
 
 -----
-### [Initialization in a Declaration](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#initialization)  
 
-```
-int someInt; // variable declaration
-someInt = 7; // assign initial value to variable
-
-int someInt = 7; // initialization in a declaration
-```
------
 ### [Interface](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#interface)    
 
 The specification of what a function does (not as code but as comments) and how it is invoked (as function prototypes). This provides the **encapsulation** or the hiding of how an implementation is made.  
@@ -291,6 +281,18 @@ Most variable declarations are usually specifically known as Variable Definition
 >  
 > `extern` is a keyword allows references of global variables from another file.   
 
+**Initialization in a Declaration**:  
+
+```
+int someInt; // variable declaration
+someInt = 7; // assign initial value to variable
+
+int someInt = 7; // initialization in a declaration
+```
+
+**Initializer**: The expression that specifies the initial value of a variable.
+
+
 **Variable Lifetimes**:
 
 The amount/period of time during a program execution that an identifier/variable has memory allocated to it. A **run-time** issue.
@@ -301,6 +303,7 @@ Storage Classes/Types:
 
   - Storage is allocated at block entry  
   - Deallocated at block exit  
+  - Initialized to the specified value _each time_ control enters the block
 
 
 2. **Static Variables**  
@@ -308,6 +311,17 @@ Storage Classes/Types:
   - Storage allocation remains for the duration of the entire program runtime  
   - Deallocated when program terminates  
   - All Global variables are static variables  
+  - Initialization _occurs only once_, the first time when the control reaches the declaration
+  - Must have constant values as operands, the following is illegal:
+    ```
+    void FunctionName( int param )
+    {
+      static int someInt = param + 1; // this is illegal
+
+      static int otherInt = 1 * 2; // not illegal
+    }
+    ```
+
 
 🍱 **Note**:  
 
