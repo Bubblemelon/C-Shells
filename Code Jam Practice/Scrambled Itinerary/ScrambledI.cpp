@@ -7,6 +7,8 @@
 // persists throughout program runtime : http://www.bogotobogo.com/cplusplus/statics.php
 static std::string *des_array;
 
+// unfinished cpp file !
+
 // My own data type
 // stores destination name as strings
 // and its repetitions as ints
