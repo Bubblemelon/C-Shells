@@ -164,7 +164,11 @@ input_file.close();
 
 `valgrind-3.13.0`  
 
-#### [Notes](#notes):  
+-----
+
+#### [Notes](#notes): 
+
+These links to another README.md. 
 
 - [Functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions)  
 
