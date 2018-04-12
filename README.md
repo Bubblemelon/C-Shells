@@ -1,14 +1,18 @@
 # C-Shells
 
-My Practice with C++ and C.
+My Practice with C++ and C.  
 
-### Notes + References:  
+![C++ GIF](https://media.giphy.com/media/7TcdDvbmG7qmqxTIYU/giphy.gif)
+
+## Notes + References  
 
 Contents:  
-- [Links](#links)
-- [Better Usage](#usage)
-- [Tools](#tools)
-- [Notes](#notes)
+- [Links](#links)  
+- [Better Usage](#better-usage)  
+- [Tools](#tools)  
+- [Notes](#notes)  
+
+----- 
 
 #### [Links](#links):  
 
@@ -62,7 +66,7 @@ Contents:
 
 
 -----
-#### [Better Usage](#usage):  
+#### [Better Usage](#better-usage):    
 
 Mistakes on Usage Explained and Resolved.  
 
