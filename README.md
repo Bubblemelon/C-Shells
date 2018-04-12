@@ -6,11 +6,18 @@ My Practice with C++ and C.
 
 ## Notes + References  
 
-Contents:  
-- [Links](#links)  
-- [Better Usage](#better-usage)  
-- [Tools](#tools)  
-- [Notes](#notes)  
+Table of Contents:  
+
+| Sections          | Description         |
+| ----------------- | ------------------- |
+| [Links](#links) | External references | 
+| [Better Usage](#better-usage) |  Usage mistakes explained and corrected |
+| [Tools](#tools) | A list of compilation and debuging tools |  
+| [Notes](#notes) | A list of notes I've made on C++ programming |
+ 
+  
+ 
+  
 
 ----- 
 
@@ -168,7 +175,7 @@ input_file.close();
 
 #### [Notes](#notes): 
 
-These links to another README.md. 
+These are links to a separate README.md. 
 
 - [Functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions)  
 
