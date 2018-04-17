@@ -1,16 +1,3 @@
-### Content:
-- [InOut.cpp]()  
-
-**Kickstart Qs:**  
-- [GBus.cpp]()  
-
-**Google Code Jam Qs:**  
-- []()
-
-**Notes + References:**
-
-
------
 ## Getting Started Tutorial:
 
 ### [InOut.cpp](https://github.com/Bubblemelon/C-Shells/tree/master/Code%20Jam%20Practice/InOut)  
