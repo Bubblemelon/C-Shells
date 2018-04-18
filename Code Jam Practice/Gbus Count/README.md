@@ -47,3 +47,6 @@ sample.in - The sample input provided on the question page.
 A-small-practice.in - original small input file.   
 A-large-practice.in - original large input file.   
 [Their respective output files are of the same name but with the ".txt" extension]  
+
+# Outputs Checked:
+![https://github.com/Bubblemelon/C-Shells/blob/master/Code%20Jam%20Practice/Gbus%20Count/GBus%20Count%20Submission.png](https://github.com/Bubblemelon/C-Shells/blob/master/Code%20Jam%20Practice/Gbus%20Count/GBus%20Count%20Submission.png=20x20)
