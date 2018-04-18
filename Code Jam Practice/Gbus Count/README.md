@@ -49,4 +49,5 @@ A-large-practice.in - original large input file.
 [Their respective output files are of the same name but with the ".txt" extension]  
 
 # Outputs Checked:
-![https://github.com/Bubblemelon/C-Shells/blob/master/Code%20Jam%20Practice/Gbus%20Count/GBus%20Count%20Submission.png](https://github.com/Bubblemelon/C-Shells/blob/master/Code%20Jam%20Practice/Gbus%20Count/GBus%20Count%20Submission.png=20x20)
+[Link to Photo](GBus%20Count%20Submission.png)  
+Unfortunately, github markdown does not support image resizing. [See this thread](https://gist.github.com/uupaa/f77d2bcf4dc7a294d109).
