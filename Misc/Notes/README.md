@@ -10,6 +10,8 @@ contents:
 
 - [Parameters](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#parameters)
 
+- [Pointers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#pointers)
+
 - [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)
 
 - [Scope of Identifiers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#scope)
@@ -199,6 +201,8 @@ The flow of a variable/value/parameter (information) from the calling code to a 
 | Outgoing/Output Parameter| **Pass-by-Reference**: <br/> goes out of the function; <br/><br/>Produces a new value for parameter without using the old value in anyway, i.e. simply replaces the old value without manipulating it. |
 | Output & Input Parameter | **Pass-by-Reference**: <br/> two way direction; <br/><br/>Uses the old value and also produces a new value for the parameter.
 
+-----
+### [Pointers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#pointers)
 -----
 
 ### [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)  
