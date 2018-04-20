@@ -202,7 +202,12 @@ The flow of a variable/value/parameter (information) from the calling code to a 
 | Output & Input Parameter | **Pass-by-Reference**: <br/> two way direction; <br/><br/>Uses the old value and also produces a new value for the parameter.
 
 -----
-### [Pointers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#pointers)
+### [Pointers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#pointers)  
+
+
+`*` Dereferences: obtain the address of a data item held in another location from (a pointer)
+`\$` Addresses:  a binary number which identifies a particular location in a data storage system or computer memory; a numerical value which acts as a storage address for the data 
+
 -----
 
 ### [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)  
