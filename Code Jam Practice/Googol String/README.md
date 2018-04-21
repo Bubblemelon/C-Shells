@@ -79,7 +79,7 @@ Segmentation Fault + Memory Leaks - `gdb` Output:
 ```
 (gdb) file a.out
 Reading symbols from a.out...done.
-(gdb) run B-small-practice.i
+(gdb) run B-small-practice.in
 Starting program: /home/catbug/Desktop/C-Shells/Code Jam Practice/Googol String/a.out B-small-practice.i
 [Inferior 1 (process 6995) exited normally]
 (gdb) run B-small-practice.in
