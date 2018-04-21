@@ -167,7 +167,16 @@ input_file.close();
 >
 > [Same as above but more reader friendly on Github. ](https://github.com/cs01/gdbgui/issues/55)  
 >
-> [Same thing but from Apple open source.](https://opensource.apple.com/source/lldb/lldb-69/docs/code-signing.txt)  
+> [Same thing but from Apple open source.](https://opensource.apple.com/source/lldb/lldb-69/docs/code-signing.txt) 
+>
+> **This may happen:**
+>
+> `(gdb) file a.out`  
+> `\"a.out\": not in executable format: File format not recognized`
+>
+> Do `g++ -m32 filename.cpp -g -Wall` to resolve, as noted [here](https://stackoverflow.com/questions/47639685/gdb-error-not-in-executable-format-file-format-not-recognized), existing GDB installed may be the x86_32 version.  
+> 
+
 
 `valgrind-3.13.0`  
 
