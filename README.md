@@ -10,16 +10,16 @@ Table of Contents:
 
 | Sections          | Description         |
 | ----------------- | ------------------- |
-| [Links](#links) | External references | 
+| [Links](#links) | External references |
 | [Better Usage](#better-usage) |  Usage mistakes explained and corrected |
 | [Tools](#tools) | A list of compilation and debuging tools |  
 | [Notes](#notes) | A list of notes I've made on C++ programming |
- 
-  
- 
-  
 
------ 
+
+
+
+
+-----
 
 #### [Links](#links):  
 
@@ -156,18 +156,49 @@ input_file.close();
 #### [Tools](#tools):  
 
 `GNU gdb (GDB) 8.1`
-> Error encountered during usage:
+> Error encountered during usage on Mac OSX:
 >
 > `Unable to find Mach task port for process-id 7234: (os/kern) failure (0x5).
  (please check gdb is codesigned - see taskgated(8))`
 >
 > **To resolve issue above**:  
 >
->   [https://gcc.gnu.org/onlinedocs/gnat_ugn/Codesigning-the-Debugger.html](https://gcc.gnu.org/onlinedocs/gnat_ugn/Codesigning-the-Debugger.html)  
 >
-> [Same as above but more reader friendly on Github. ](https://github.com/cs01/gdbgui/issues/55)  
+> [Link to the related Github Issue](https://github.com/cs01/gdbgui/issues/55)
+> - This more reader friendly, as in not txt file print but the content mentioned in the above link was copied from [this](https://gcc.gnu.org/onlinedocs/gnat_ugn/Codesigning-the-Debugger.html).
 >
-> [Same thing but from Apple open source.](https://opensource.apple.com/source/lldb/lldb-69/docs/code-signing.txt) 
+> [Similar but for lldb](https://opensource.apple.com/source/lldb/lldb-69/docs/code-signing.txt)  
+> - The work around "the bug" that this link is referring to can be found [here](https://apple.stackexchange.com/questions/309017/unknown-error-2-147-414-007-on-creating-certificate-with-certificate-assist ).      
+>
+>
+> **How I resolved this:**:  
+>
+> Before creating the certificate, check the version of gdb by doing `gdb --version`.
+> - if it is not version 8.0.1, then do the following:  
+>   1. Run `brew uninstall gdb`, if that doesn't work then do, `brew uninstall --force gdb`. Doing `brew unlink gdb` may work instead, look at this [discussion](https://stackoverflow.com/questions/49001329/gdb-doesnt-work-on-macos-high-sierra-10-13-3).
+>   3. Now do `brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/c3128a5c335bd2fa75ffba9d721e9910134e4644/Formula/gdb.rb`.  
+>
+> For more information on the above, refer to this on [StackOverFlow](https://stackoverflow.com/questions/49001329/gdb-doesnt-work-on-macos-high-sierra-10-13-3).  
+>
+> The following are steps to codesign gdb:
+>
+> 1. In Keychain Access (toolbar i.e. where system time is displayed), go to Certificate Assistant and Create a Certificate.  
+> 2. Enter a relatable name for this Certificate e.g. "gdb_cert".
+> 3. Fill in the following and then click create:
+>   - Identity Type: Self Signed Root
+>   - Certificate Type: Code Signing
+> 4. Double click on the Certificate which can be found in "Login" category.
+> 5. In the popup window, click on the "Trust" arrow and select "Always Trust" when using this Certificate.  
+> 6. Drag this Certificate from the Login category to "System".
+> 7. Run `killall taskgated`:
+>   - if `No matching processes belonging to you were found` then do `ps aux | grep taskgated`
+> 8. Finally run `codesign -fs nameofcertificate /usr/local/bin/gdb`:
+>   - To find path location of gdb run `which gdb`  
+>   - This command does not need to be in the same directory of the Certificate
+> 9. Restart machine.
+> - Additional sources:
+>   - [Apple Stack Exchange](https://apple.stackexchange.com/questions/309017/unknown-error-2-147-414-007-on-creating-certificate-with-certificate-assist )
+>   - [Github Gist Discussion](https://gist.github.com/gravitylow/fb595186ce6068537a6e9da6d8b5b96d)  
 >
 > **This may happen:**
 >
@@ -175,16 +206,16 @@ input_file.close();
 > `\"a.out\": not in executable format: File format not recognized`
 >
 > Do `g++ -m32 filename.cpp -g -Wall` to resolve, as noted [here](https://stackoverflow.com/questions/47639685/gdb-error-not-in-executable-format-file-format-not-recognized), existing GDB installed may be the x86_32 version.  
-> 
+>
 
 
 `valgrind-3.13.0`  
 
 -----
 
-#### [Notes](#notes): 
+#### [Notes](#notes):
 
-These are links to a separate README.md. 
+These are links to a separate README.md.
 
 - [Functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions)  
 
