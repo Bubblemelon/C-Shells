@@ -208,6 +208,8 @@ The flow of a variable/value/parameter (information) from the calling code to a 
 `*` Dereferences: obtain the address of a data item held in another location from (a pointer)
 `\$` Addresses:  a binary number which identifies a particular location in a data storage system or computer memory; a numerical value which acts as a storage address for the data 
 
+[Link to example](https://stackoverflow.com/questions/4955198/what-does-dereferencing-a-pointer-mean)  
+
 -----
 
 ### [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)  
