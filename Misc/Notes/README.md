@@ -206,11 +206,11 @@ The flow of a variable/value/parameter (information) from the calling code to a 
 
 Every variable has a memory address. Pointers are holders of a memory address i.e. it is possible to store the address of a variable in a pointer-variable.  
 
-**Declaring a Pointer**:  
+**Declaring a ➡️ Pointer**:  
 
 `int *pInt;` is the same as `int * pInt;`  
 
-This pointer variable will hold a memory address of a variable with the type int. 
+With the `*` asterisk next to the variable name, this gives the variable the capability to hold a memory address of a variable with the type int. 
 
 **Initializing a Pointer**:  
 
