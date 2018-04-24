@@ -204,9 +204,26 @@ The flow of a variable/value/parameter (information) from the calling code to a 
 -----
 ### [Pointers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#pointers)  
 
+Every variable has a memory address. Pointers are holders of a memory address i.e. it is possible to store the address of a variable in a pointer.  
 
-`*` Dereferences: obtain the address of a data item held in another location from (a pointer)
-`\$` Addresses:  a binary number which identifies a particular location in a data storage system or computer memory; a numerical value which acts as a storage address for the data 
+**Declaring a Pointer**:  
+
+`int *pInt;`
+
+This pointer variable will hold a memory address of a variable with the type int. 
+
+**Initializing a Pointer*:  
+
+`pInt = 0;`  
+
+This is a null pointer. Whereas `int *pInt;` before it is initialized is considered as a **Wild Pointer**.  
+
+[In C++, while the NULL macro was inherited from C, the integer literal for zero has been traditionally preferred to represent a null pointer constant. However, C++11 has introduced an explicit nullptr constant to be used instead.](https://en.wikipedia.org/wiki/Null_pointer)
+
+`*` Dereferences: obtain the address of a data item held in another location from (a pointer)  
+`\$` Addresses:  a binary number which identifies a particular location in a data storage system or computer memory; a numerical value which acts as a storage address for the data  
+
+
 
 [Link to example](https://stackoverflow.com/questions/4955198/what-does-dereferencing-a-pointer-mean)  
 
