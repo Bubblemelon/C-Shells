@@ -208,7 +208,7 @@ Every variable has a memory address. Pointers are holders of a memory address i.
 
 **Declaring a Pointer**:  
 
-`int *pInt;` is the same as `int * pInt`  
+`int *pInt;` is the same as `int * pInt;`  
 
 This pointer variable will hold a memory address of a variable with the type int. 
 
@@ -218,18 +218,27 @@ This pointer variable will hold a memory address of a variable with the type int
 
 This above is a null pointer. Whereas `int *pInt;` _before it's been initialized_ is considered as a **Wild Pointer**.   
 
-**Storing an Address in a Pointer**:  
+[In C++, while the `NULL` macro was inherited from C, the integer literal for zero has been traditionally preferred to represent a null pointer constant. However, C++11 has introduced an explicit `nullptr` constant to be used instead.](https://en.wikipedia.org/wiki/Null_pointer)  
+
+**Storing the Address of a Variable in a Pointer**:  
 
 ```
 int someInt = 7;
 
-pInt = &someInt;
+pInt = &someInt; //second line
 ```
 
-[In C++, while the NULL macro was inherited from C, the integer literal for zero has been traditionally preferred to represent a null pointer constant. However, C++11 has introduced an explicit nullptr constant to be used instead.](https://en.wikipedia.org/wiki/Null_pointer)
+- Variables `someInt` and `pInt` must the same type. 
+- The "**Address-Of**" operator `&` indicates/refers to the address of a variable.
+- If the second line, had this `pInt = someInt;` instead i.e. **without** `&`, then the pointer variable `pInt` would be assigned to the value of `someInt`. ( It is analogous to `pInt = 7;` )
 
-`*` Dereferences: obtain the address of a data item held in another location from (a pointer)  
-`\$` Addresses:  a binary number which identifies a particular location in a data storage system or computer memory; a numerical value which acts as a storage address for the data  
+**Indirection**: 
+
+Accessing the value at the address held by a pointer. Pointers **provide an indirect way to get a value** held at its address. 
+
+`*` Dereferences: obtain the address of a data item held in another location from (a pointer)
+
+`\&` Addresses:  a binary number which identifies a particular location in a data storage system or computer memory; a numerical value which acts as a storage address for the data  
 
 
 
