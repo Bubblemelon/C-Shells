@@ -256,6 +256,8 @@ The preprocessor expands an `#include` directive by physically inserting content
 
 `< >` angle brackets tell the preprocessor to look for files in the **Standard Include Directory** \- a location path in the computer system that contains all the Standard header files.  
 
+The GNU GCC [Guide](https://gcc.gnu.org/onlinedocs/cpp/index.html#SEC_Contents) to the C Preprocessor.  
+
 -----
 
 ### [Scope of Identifiers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#scope)  
