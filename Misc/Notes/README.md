@@ -204,19 +204,27 @@ The flow of a variable/value/parameter (information) from the calling code to a 
 -----
 ### [Pointers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#pointers)  
 
-Every variable has a memory address. Pointers are holders of a memory address i.e. it is possible to store the address of a variable in a pointer.  
+Every variable has a memory address. Pointers are holders of a memory address i.e. it is possible to store the address of a variable in a pointer-variable.  
 
 **Declaring a Pointer**:  
 
-`int *pInt;`
+`int *pInt;` is the same as `int * pInt`  
 
 This pointer variable will hold a memory address of a variable with the type int. 
 
-**Initializing a Pointer*:  
+**Initializing a Pointer**:  
 
 `pInt = 0;`  
 
-This is a null pointer. Whereas `int *pInt;` before it is initialized is considered as a **Wild Pointer**.  
+This above is a null pointer. Whereas `int *pInt;` _before it's been initialized_ is considered as a **Wild Pointer**.   
+
+**Storing an Address in a Pointer**:  
+
+```
+int someInt = 7;
+
+pInt = &someInt;
+```
 
 [In C++, while the NULL macro was inherited from C, the integer literal for zero has been traditionally preferred to represent a null pointer constant. However, C++11 has introduced an explicit nullptr constant to be used instead.](https://en.wikipedia.org/wiki/Null_pointer)
 
