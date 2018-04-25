@@ -238,11 +238,25 @@ Accessing the value at the address held by a pointer. Pointers **provide an indi
 
 `*` Dereferences: obtain the address of a data item held in another location from (a pointer)
 
-`\&` Addresses:  a binary number which identifies a particular location in a data storage system or computer memory; a numerical value which acts as a storage address for the data  
+`&` Addresses:  a binary number which identifies a particular location in a data storage system or computer memory; a numerical value which acts as a storage address for the data 
 
+**The Difference between a Pointer and a Variable**: 
 
+Consider the following:  
+```
+int myvar = 25;
+int bar = 0;
+int *foo = 0;
+```
+And then after this:   
+```
+int *foo = &myvar;
+int bar = myvar;
+```
 
-[Link to example](https://stackoverflow.com/questions/4955198/what-does-dereferencing-a-pointer-mean)  
+![Difference between a Pointer and a Variable Image](http://www.cplusplus.com/doc/tutorial/pointers/reference_operator.png)  
+
+[Link to example](https://stackoverflow.com/questions/4955198/what-does-dereferencing-a-pointer-mean)   
 
 -----
 
