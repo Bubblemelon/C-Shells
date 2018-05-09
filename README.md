@@ -14,6 +14,7 @@ Table of Contents:
 | [Better Usage](#better-usage) |  Usage mistakes explained and corrected |
 | [Tools](#tools) | A list of compilation and debuging tools |  
 | [Notes](#notes) | A list of notes I've made on C++ programming |
+| [To Do](#to-do) | Tentative list of to dos for this repo       |
 
 
 
@@ -229,4 +230,10 @@ These are links to a separate README.md.
 
 - [Scope of Identifiers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#scope)
 
-- [Variables](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#variables)
+- [Variables](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#variables)  
+
+-----
+
+#### [To Do](#to-do):  
+
+- [ ] [SFML C++ Game Tutorial](https://www.lynda.com/MyPlaylist/Watch/16026317/671864?autoplay=true)  
