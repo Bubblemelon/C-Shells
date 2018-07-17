@@ -204,9 +204,59 @@ The flow of a variable/value/parameter (information) from the calling code to a 
 -----
 ### [Pointers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#pointers)  
 
+Every variable has a memory address. Pointers are holders of a memory address i.e. it is possible to store the address of a variable in a pointer-variable.  
+
+**Declaring a ➡️ Pointer**:  
+
+`int *pInt;` is the same as `int * pInt;`  
+
+With the `*` asterisk next to the variable name, this gives the variable the capability to hold a memory address of a variable with the type int. 
+
+**Initializing a Pointer**:  
+
+`pInt = 0;`  
+
+This above is a null pointer. Whereas `int *pInt;` _before it's been initialized_ is considered as a **Wild Pointer**.   
+
+[In C++, while the `NULL` macro was inherited from C, the integer literal for zero has been traditionally preferred to represent a null pointer constant. However, C++11 has introduced an explicit `nullptr` constant to be used instead.](https://en.wikipedia.org/wiki/Null_pointer)  
+
+**Storing the Address of a Variable in a Pointer**:  
+
+```
+int someInt = 7;
+
+pInt = &someInt; //second line
+```
+
+- Variables `someInt` and `pInt` must the same type. 
+- The "**Address-Of**" operator `&` indicates/refers to the address of a variable.
+- If the second line, had this `pInt = someInt;` instead i.e. **without** `&`, then the pointer variable `pInt` would be assigned to the value of `someInt`. ( It is analogous to `pInt = 7;` )
+
+**Indirection**: 
+
+Accessing the value at the address held by a pointer. Pointers **provide an indirect way to get a value** held at its address. 
 
 `*` Dereferences: obtain the address of a data item held in another location from (a pointer)
-`\$` Addresses:  a binary number which identifies a particular location in a data storage system or computer memory; a numerical value which acts as a storage address for the data 
+
+`&` Addresses:  a binary number which identifies a particular location in a data storage system or computer memory; a numerical value which acts as a storage address for the data 
+
+**The Difference between a Pointer and a Variable**: 
+
+Consider the following:  
+```
+int myvar = 25;
+int bar = 0;
+int *foo = 0;
+```
+And then after this:   
+```
+int *foo = &myvar;
+int bar = myvar;
+```
+
+![Difference between a Pointer and a Variable Image](http://www.cplusplus.com/doc/tutorial/pointers/reference_operator.png)  
+
+[Link to example](https://stackoverflow.com/questions/4955198/what-does-dereferencing-a-pointer-mean)   
 
 -----
 
@@ -219,6 +269,8 @@ The `#include` directive is handled by the preprocessor.  Also known as a _prepr
 The preprocessor expands an `#include` directive by physically inserting contents of the header file i.e. `.h` files into the source program.  
 
 `< >` angle brackets tell the preprocessor to look for files in the **Standard Include Directory** \- a location path in the computer system that contains all the Standard header files.  
+
+The GNU GCC [Guide](https://gcc.gnu.org/onlinedocs/cpp/index.html#SEC_Contents) to the C Preprocessor.  
 
 -----
 
