@@ -16,10 +16,6 @@ Table of Contents:
 | [Notes](#notes) | A list of notes I've made on C++ programming |
 | [To Do](#to-do) | Tentative list of to dos for this repo       |
 
-
-Test
-
-
 -----
 
 #### [Links](#links):  
