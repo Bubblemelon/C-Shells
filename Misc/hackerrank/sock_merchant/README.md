@@ -19,5 +19,5 @@ To have the outputs placed onto a file:
 
 `./sock < case1.txt > sock-output.txt`
 
-[Go to Question Source](// https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
+[Go to Question Source](https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
 )  

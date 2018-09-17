@@ -59,33 +59,3 @@ int main() {
     cout << count;
 
 }
-
-    // int i = 0;
-        
-    //     for(int ii=0; ii < paired.size(); ii++, i++){
-
-    //         if(i == paired.at(ii)){
-    //             i++;
-                
-    //             cout << "breakkig" << endl;
-                
-    //             break;
-                
-    //         } else {
-    //             for(int j = i + 1; j < ar.size(); j++){
-                    
-    //                 cout << "ar[" << i << "] " << "=" << ar[i] << endl;
-    //                 cout << "ar[" << j << "]" << "=" << ar[j] << endl;
-                   
-    //                 if(ar.at(i) == ar.at(j)){
-                        
-    //                     cout << "matched" << endl; 
-                        
-    //                     paired[ar.at(j)];
-    //                     count++;
-    //                     break;
-    //                 }
-    //             }
-    //         }
-    //     }
-    
