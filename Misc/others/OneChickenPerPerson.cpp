@@ -29,6 +29,9 @@ using namespace std;
 // returns 9 more pieces of chickens needed
 // i.e. Dr. Chaz needs 9 more pieces of chicken!
 
+// compile
+// g++ OneChickenPerPerson.cpp -o chicken
+
 // source
 // https://open.kattis.com/problems/onechicken
 int main(){
