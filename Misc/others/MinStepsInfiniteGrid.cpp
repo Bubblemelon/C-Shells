@@ -27,8 +27,10 @@ using namespace std;
 // vector<int> Y = {0, 1, 2, 9, 12}; //coordinates y
 // returns 16
 
-// compile
+// compile:
 // g++ MinStepInfinteGrid -o MSIG
+// test:
+// ./MSIG < sometestfile.in
 
 // question source
 // https://www.interviewbit.com/problems/min-steps-in-infinite-grid/
