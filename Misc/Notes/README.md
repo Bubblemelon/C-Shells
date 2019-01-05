@@ -254,7 +254,7 @@ int *foo = &myvar;
 int bar = myvar;
 ```
 
-![Difference between a Pointer and a Variable Image](http://www.cplusplus.com/doc/tutorial/pointers/reference_operator.png)  
+![Difference between a Pointer and a Variable Image](notes_img1.png)  
 
 [Link to example](https://stackoverflow.com/questions/4955198/what-does-dereferencing-a-pointer-mean)   
 
