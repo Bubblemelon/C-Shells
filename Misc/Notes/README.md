@@ -210,7 +210,7 @@ Every variable has a memory address. Pointers are holders of a memory address i.
 
 `int *pInt;` is the same as `int * pInt;`  
 
-With the `*` asterisk next to the variable name, this gives the variable the capability to hold a memory address of a variable with the type int. 
+With the `*` asterisk next to the variable name, this gives the variable the capability to hold a memory address of a variable with the type int.
 
 **Initializing a Pointer**:  
 
@@ -228,19 +228,19 @@ int someInt = 7;
 pInt = &someInt; //second line
 ```
 
-- Variables `someInt` and `pInt` must the same type. 
+- Variables `someInt` and `pInt` must the same type.
 - The "**Address-Of**" operator `&` indicates/refers to the address of a variable.
 - If the second line, had this `pInt = someInt;` instead i.e. **without** `&`, then the pointer variable `pInt` would be assigned to the value of `someInt`. ( It is analogous to `pInt = 7;` )
 
-**Indirection**: 
+**Indirection**:
 
-Accessing the value at the address held by a pointer. Pointers **provide an indirect way to get a value** held at its address. 
+Accessing the value at the address held by a pointer. Pointers **provide an indirect way to get a value** held at its address.
 
 `*` Dereferences: obtain the address of a data item held in another location from (a pointer)
 
-`&` Addresses:  a binary number which identifies a particular location in a data storage system or computer memory; a numerical value which acts as a storage address for the data 
+`&` Addresses:  a binary number which identifies a particular location in a data storage system or computer memory; a numerical value which acts as a storage address for the data
 
-**The Difference between a Pointer and a Variable**: 
+**The Difference between a Pointer and a Variable**:
 
 Consider the following:  
 ```
@@ -257,6 +257,10 @@ int bar = myvar;
 ![Difference between a Pointer and a Variable Image](http://www.cplusplus.com/doc/tutorial/pointers/reference_operator.png)  
 
 [Link to example](https://stackoverflow.com/questions/4955198/what-does-dereferencing-a-pointer-mean)   
+
+🍱 **Note**:  
+
+My notes on `Pointers` above is far from comprehensive. My understanding and source of reference (aside from the Internet) comes from the book [Understanding and Using C Pointers](https://www.amazon.com/Understanding-Using-Pointers-Techniques-Management/dp/1449344186).
 
 -----
 
