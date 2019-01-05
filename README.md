@@ -221,6 +221,8 @@ These are links to a separate README.md.
 
 - [Parameters](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#parameters)
 
+- [Pointers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#pointers)
+
 - [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)
 
 - [Scope of Identifiers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#scope)
