@@ -12,7 +12,7 @@ Table of Contents:
 | ----------------- | ------------------- |
 | [Links](#links) | External references |
 | [Better Usage](#better-usage) |  Usage mistakes explained and corrected |
-| [Tools](#tools) | A list of compilation and debuging tools |  
+| [Tools](#tools) | A list of compilation and debugging tools |
 | [Notes](#notes) | A list of notes I've made on C++ programming |
 
 -----
@@ -150,6 +150,16 @@ input_file.close();
 -----
 
 #### [Tools](#tools):  
+
+Compiler versions:
+
+`gcc (GCC) 10.2.1 20200723 (Red Hat 10.2.1-1)`
+
+`gcc (Ubuntu 5.5.0-12ubuntu1) 5.5.0 20171010`
+
+Debugging tools:
+
+`GNU gdb (GDB) Fedora 9.1-6.fc32`
 
 `GNU gdb (GDB) 8.1`
 > Error encountered during usage on Mac OSX:
