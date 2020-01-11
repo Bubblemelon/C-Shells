@@ -273,20 +273,18 @@ Debugging tools:
 
 These are links to a separate README.md.
 
-- [Functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions)
+- [Functions](/Misc/Notes/README.md#functions)
 
-- [Header
-  Files](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#header-files)
+- [Header Files](/Misc/Notes/README.md#header-files)
 
-- [Interface](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#interface)
+- [Interface](/Misc/Notes/README.md#interface)
 
-- [Parameters](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#parameters)
+- [Parameters](/Misc/Notes/README.md#parameters)
 
-- [Pointers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#pointers)
+- [Pointers](/Misc/Notes/README.md#pointers)
 
-- [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)
+- [Preprocessor](/Misc/Notes/README.md#preprocessor)
 
-- [Scope of
-  Identifiers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#scope)
+- [Scope of Identifiers](/Misc/Notes/README.md#scope)
 
-- [Variables](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#variables)
+- [Variables](/Notes/README.md#variables)
