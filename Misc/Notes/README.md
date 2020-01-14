@@ -2,21 +2,21 @@
 
 contents:
 
-- [Functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions)
+- [Functions](#functions)
 
-- [Header Files](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#header-files)
+- [Header Files](#header-files)
 
-- [Interface](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#interface)
+- [Interface](#interface)
 
-- [Parameters](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#parameters)
+- [Parameters](#parameters)
 
-- [Pointers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#pointers)
+- [Pointers](#pointers)
 
-- [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)
+- [Preprocessor](#preprocessor)
 
-- [Scope of Identifiers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#scope)
+- [Scope of Identifiers](#scope-of-identifiers)
 
-- [Variables](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#variables)
+- [Variables](#variables)
 
 -----
 
