@@ -285,6 +285,6 @@ These are links to a separate README.md.
 
 - [Preprocessor](/Misc/Notes/README.md#preprocessor)
 
-- [Scope of Identifiers](/Misc/Notes/README.md#scope)
+- [Scope of Identifiers](/Misc/Notes/README.md#scope-of-identifiers)
 
 - [Variables](/Notes/README.md#variables)
