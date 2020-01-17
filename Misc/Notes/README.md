@@ -324,14 +324,14 @@ Pointers](https://www.amazon.com/Understanding-Using-Pointers-Techniques-Managem
 
 -----
 
-### [Preprocessor](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#preprocessor)
+### [Preprocessor](#preprocessor)
 
-A program that acts as a filter during the compilation phase.
+A program that acts as a filter during the compilation phase. Obeys commands that begin with `#`.
 
-The `#include` directive is handled by the preprocessor.  Also known as a
+E.g. the `#include` or `#define` directive is handled by the preprocessor.  Also known as a
 _preprocessor directive_.
 
-The preprocessor expands an `#include` directive by physically inserting
+The preprocessor expands an `#include` directive by **physically inserting**
 contents of the header file i.e. `.h` files into the source program.
 
 `< >` angle brackets tell the preprocessor to look for files in the **Standard
@@ -341,6 +341,43 @@ the Standard header files.
 The GNU GCC [Guide](https://gcc.gnu.org/onlinedocs/cpp/index.html#SEC_Contents)
 to the C Preprocessor.
 
+**A simplified overview of how C/C++ programs are converted to an executable object**:
+
+```
+Preprocessing ➞ Compiling ➞ Linking
+```
+
+* Compiling:
+  > **Compiler** takes modified code from **preprocessor** or "preprocessed code" and translates it to assembly instructions that are  specific to the target processor architecture.
+
+* Assembly:
+  > into machine instructions (object code) and symbol tables.
+
+* Linking:
+  > The **linker** combines object code from assembler with additional code such as library functions e.g. `printf()`. Symbols in the object code get resolved to memory locations. All of this is to yield a complete executable program.
+
+Files that can be generated:
+
+`.i` is preprocessor's modification on the program. Use the `-E` flag/option when compiling to generate this file.
+
+`.s` is assembly instructions from the compiler. Use the `-S` flag/option when compiling to generate this file.
+
+`.out` is the default extention of the executable when a name is not specified.
+
+`.o` files are objects. They are the output of the assembler and input to the linker/librarian. Use the `-c` flag/option to generate the object file. This is the instructions for the processor. Use,
+```bash
+hexdump filename.o
+od filename.o
+```
+to see content in hex.
+
+`.a` files are archives. They are groups of objects or static libraries and are also input into the linker.
+
+To produce all intermidiate files from `gcc`, for example run:
+
+```bash
+gcc –Wall –save-temps filename.c –o filename
+```
 -----
 
 ### [Scope of Identifiers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#scope)
