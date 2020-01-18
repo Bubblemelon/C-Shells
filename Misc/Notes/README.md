@@ -53,13 +53,13 @@ section.
 
 -----
 
-### [Functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#functions):
+### [Functions](#functions):
 
 The definition of the _main_ function **usually appears first in a program**,
 followed by the definitions of all other functions. <br/>
 
 🎈 **main Function**: Program entry and Controls the program. Returns either 1
-or 0. Usually zero for a successful execution.
+or 0. Usually zero for a successful execution. Program will still terminate without `return 0`; the compiler may produce a warning.
 
 🎈 **Function calls**: is a call to a function that results in the execution of
 the called function.
