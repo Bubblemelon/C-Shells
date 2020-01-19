@@ -2,6 +2,8 @@
 
 contents:
 
+- [C Fundamentals](#c-fundamentals)
+
 - [Functions](#functions)
 
 - [Header Files](#header-files)
@@ -506,3 +508,7 @@ default.
 Using `static` on a local variable, will allow its storage lifetime to persist
 from function call to call (this `static` local variable's value is retained
 from call to call).
+
+### [C Fundamentals](#c-fundamentals)
+
+A [list of programs in C](Misc/c-fundamentals/README.md) ordered from ascending complexity, where concepts build from each other.
