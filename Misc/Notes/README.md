@@ -450,7 +450,7 @@ Scopes not covered in the code above:
 
 -----
 
-### [Variables](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#variables)
+### [Variables](#variables)
 
 **Variable Definitions**:
 
@@ -484,6 +484,9 @@ int someInt = 7; // initialization in a declaration
 
 **Initializer**: The expression that specifies the initial value of a variable.
 
+The right side of an assignment is conventionally called an **expression** and does not always have to be a numeric value.
+
+Using an uninitialized variable may yield an unpredictable result.
 
 **Variable Lifetimes**:
 
