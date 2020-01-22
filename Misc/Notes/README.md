@@ -10,6 +10,8 @@ contents:
 
 - [Interface](#interface)
 
+- [Macros](#macros)
+
 - [Parameters](#parameters)
 
 - [Pointers](#pointers)
@@ -144,6 +146,21 @@ This further explains encapsulation:
 2. Mechanisms/methods to communicating with the function.
 
 -----
+
+### [Macros](#macros)
+
+A macro defintion is preprocessing directive. It is a way to define constants.
+
+```c
+#define MONTHS_PER_YEAR 12
+
+#define RECIPROCAL_OF_PI (1.0f / 3.14159f)
+```
+
+When a program is compiled the preprocessor replaces the macro with its associated value/expression.
+
+Use all uppercase letters for macro definitions (a usage convention -- not a language requirement) and expressions should be in parentheses.
+
 ### [Parameters](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#parameters)
 
 🎈 **Actual Parameter**: Appears in a function call/invocation.
