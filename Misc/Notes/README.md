@@ -1,6 +1,6 @@
-## My C/C++ Notes:
+# [My C/C++ Notes](#my-cc-notes)
 
-contents:
+Contents:
 
 - [C Fundamentals](#c-fundamentals)
 
@@ -532,3 +532,5 @@ from call to call).
 ### [C Fundamentals](#c-fundamentals)
 
 A [list of programs in C](Misc/c-fundamentals/README.md) ordered from ascending complexity, where concepts build from each other.
+
+[Go back to the TOP 🔝 of this page.](#my-cc-notes)
