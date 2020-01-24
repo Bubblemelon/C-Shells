@@ -24,10 +24,9 @@ Contents:
 
 -----
 
-### [Header Files](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#header-files)
+### [Header Files](#header-files)
 
-Contains mostly of, [Function
-Prototypes](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#function-proto).
+Contains mostly of, [Function Prototypes](#function-prototype).
 
 > May contain, named CONSTANTS e.g. `INT_MAX` and `INT_MIN` , stream variables
 > e.g. `cin` and `cout`, typedefs, etc.
@@ -51,9 +50,7 @@ By doing: `#include <headerfilename.h>`
 > This tells the preprocessor to find the header file and insert the prototypes
 > in to the program.
 
-🍱 **Note**: This is part of the
-[Interface](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#interface)
-section.
+🍱 **Note**: This is part of the [Interface](#interface) section.
 
 -----
 
@@ -78,7 +75,7 @@ function.
 >
 > Function body: Where the code for the procedure goes.
 
-#### [Function Prototype](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#function-proto):
+#### [Function Prototype](#function-prototype):
 
 a function declaration that omits the body of the function (function body).
 > Also known as a _forward declaration_：
@@ -97,7 +94,7 @@ There are two kinds of kind of subprograms, [void
 functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#void-funct)
 and **value-returning functions**.
 
-#### [Void Functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#void-funct)
+#### [Void Functions](#void-functions)
 
 This function does not return a function value to its caller, so it does not
 finish with a return keyword.
@@ -117,7 +114,7 @@ naming.
 
 -----
 
-### [Interface](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#interface)
+### [Interface](#interface)
 
 The specification of what a function does (not as code but as comments) and how
 it is invoked (as function prototypes). This provides the **encapsulation** or
@@ -161,7 +158,7 @@ When a program is compiled the preprocessor replaces the macro with its associat
 
 Use all uppercase letters for macro definitions (a usage convention -- not a language requirement) and expressions should be in parentheses.
 
-### [Parameters](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#parameters)
+### [Parameters](#parameters)
 
 🎈 **Actual Parameter**: Appears in a function call/invocation.
 
@@ -264,7 +261,7 @@ function and from the function back to the calling code.
 | Output & Input Parameter | **Pass-by-Reference**: <br/> two way direction; <br/><br/>Uses the old value and also produces a new value for the parameter.
 
 -----
-### [Pointers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#pointers)
+### [Pointers](#pointers)
 
 Every variable has a memory address. Pointers are holders of a memory address
 i.e. it is possible to store the address of a variable in a pointer-variable.
@@ -399,7 +396,7 @@ gcc –Wall –save-temps filename.c –o filename
 ```
 -----
 
-### [Scope of Identifiers](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#scope)
+### [Scope of Identifiers](#scope-of-identifiers)
 
 The region of a program where it has legal reference to an identifier. Scope is
 a **compile-time** issue.
