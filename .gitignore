@@ -1,2 +1,4 @@
 # ignores vscode configurations
 *.vscode
+*.i
+*.o
