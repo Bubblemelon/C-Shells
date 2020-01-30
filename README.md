@@ -1,8 +1,10 @@
 # C-Shells
 
-My Practice with C++ and C.
+My exploration with C and C++.
 
 ![C++ GIF](https://media.giphy.com/media/7TcdDvbmG7qmqxTIYU/giphy.gif)
+
+<p style="color:rgb(255, 99, 71, 0.5);"><i>C shells by the sea shore, buffer overflow by adding more?</i></p>
 
 ## Notes + References
 
