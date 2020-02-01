@@ -15,7 +15,7 @@ Table of Contents:
 | [Links](#links) | External references |
 | [Better Usage](#better-usage) |  Usage mistakes explained and corrected |
 | [Tools](#tools) | A list of compilation and debugging tools |
-| [Notes](#notes) | A list of notes I've made on C++ programming |
+| [Notes](#notes) | A list of notes I've made on C and C++ programming |
 
 -----
 
