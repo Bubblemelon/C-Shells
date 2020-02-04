@@ -2,6 +2,8 @@
 
 Contents:
 
+- [C Data Types](#c-data-types)
+
 - [C Fundamentals](#c-fundamentals)
 
 - [Functions](#functions)
@@ -525,6 +527,141 @@ default.
 Using `static` on a local variable, will allow its storage lifetime to persist
 from function call to call (this `static` local variable's value is retained
 from call to call).
+
+### [C Data Types](#c-data-types)
+
+The following table was adapted from [Wikipedia](https://en.wikipedia.org/wiki/C_data_types).
+
+<table>
+<thead>
+<tr class="header">
+<th><p>Type</p></th>
+<th><p>Explanation</p></th>
+<th><p>Minimum size (bits)</p></th>
+<th><p>Format specifier</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><code>char</code></p></td>
+<td><p>The smallest addressable unit in a machine that would contain the basic character set. It can be treated as an <code>unsigned int</code>, and uses  <code>CHAR_BIT</code> bits.</p></td>
+<td><p>8</p></td>
+<td><p><code>%c</code></p></td>
+</tr>
+<tr class="even">
+<td><p><code>signed char</code></p></td>
+<td><p>Similar size to <code>char</code>, but not always <code>signed</code>. Represents the minimum [−127 , +127] range.</p></td>
+<td><p>8</p></td>
+<td><p><code>%c</code> <small>( use <code>%hhi</code> for numerical output )</small></p></td>
+</tr>
+<tr class="odd">
+<td><p><code>unsigned char</code></p></td>
+<td><p>Similar size as <code>char</code>, but not always <code>unsigned</code>. Represents the minimum [0, 255] range.</p></td>
+<td><p>8</p></td>
+<td><p><code>%c</code> <small>( use <code>%hhu</code> for numerical output )</small></p></td>
+</tr>
+<tr class="even">
+<td><p><code>short</code><br />
+<code>short int</code><br />
+<code>signed short</code><br />
+<code>signed short int</code></p></td>
+<td><p>Represents the minimum [−32,767 , +32,767] range.]</p></td>
+<td><p>16</p></td>
+<td><p><code>%hi</code> <br/> <code>%hd</code></p></td>
+</tr>
+<tr class="odd">
+<td><p><code>unsigned short</code><br />
+<code>unsigned short int</code></p></td>
+<td><p>Represents the minimum the [0, 65,535] range.</p></td>
+<td><p>16</p></td>
+<td><p><code>%hu</code></p></td>
+</tr>
+<tr class="even">
+<td><p><code>int</code><br />
+<code>signed</code><br />
+<code>signed int</code></p></td>
+<td><p>Represents the minimumthe [−32,767 , +32,767] range.</p></td>
+<td><p>16</p></td>
+<td><p><code>%i</code> <br/> <code>%d</code></p></td>
+</tr>
+<tr class="odd">
+<td><p><code>unsigned</code><br />
+<code>unsigned int</code></p></td>
+<td><p>Represents the minimum [0, 65,535] range.</p></td>
+<td><p>16</p></td>
+<td><p><code>%u</code></p></td>
+</tr>
+<tr class="even">
+<td><p><code>long</code><br />
+<code>long int</code><br />
+<code>signed long</code><br />
+<code>signed long int</code></p></td>
+<td><p>Represents the minimum <br/> [−2,147,483,647 , +2,147,483,647] range.</p></td>
+<td><p>32</p></td>
+<td><p><code>%li</code> <br/> <code>%ld</code></p></td>
+</tr>
+<tr class="odd">
+<td><p><code>unsigned long</code><br />
+<code>unsigned long int</code></p></td>
+<td><p>Represents the minimum [0, 4,294,967,295] range.</p></td>
+<td><p>32</p></td>
+<td><p><code>%lu</code></p></td>
+</tr>
+<tr class="even">
+<td><p><code>long long</code><br />
+<code>long long int</code><br />
+<code>signed long long</code><br />
+<code>signed long long int</code></p></td>
+<td><p>Represents the minimum <br> [−9,223,372,036,854,775,807 , +9,223,372,036,854,775,807] range. Introduced in the C99 Standard.</p></td>
+<td><p>64</p></td>
+<td><p><code>%lli</code> </br> <code>%lld</code></p></td>
+</tr>
+<tr class="odd">
+<td><p><code>unsigned long long</code><br />
+<code>unsigned long long int</code></p></td>
+<td><p>Represents the minimum [0, +18,446,744,073,709,551,615] range.  Introduced in the C99 Standard.</p></td>
+<td><p>64</p></td>
+<td><p><code>%llu</code></p></td>
+</tr>
+<tr class="even">
+<td><p><code>float</code></p></td>
+<td><p>To store numeric values after the decimal point; decimal point "floats". This type has a <i>single-precision floating-point</i>. Used when the amount of precision isn't critical.<br/>Modern computers follow the IEEE Standard 754, also known as IEC 60559. Represents the minimum </br> [1.17549 x 10^(-38), 3.40282 x 10^(38)] range. 6 digit precision.</p></td>
+<td><p>32</p></td>
+<td><p><code>%f</code> <code>%F</code><br />
+<code>%g</code> <code>%G</code><br />
+<code>%e</code> <code>%E</code><br />
+<code>%a</code> <code>%A</code></p></td>
+</tr>
+<tr class="odd">
+<td><p><code>double</code></p></td>
+<td><p>This type has a <i>double-precision floating-point</i>. Greater precision -- enough for most programs.<br/>Modern computers follow the IEEE Standard 754, also known as IEC 60559. Represents the minimum </br> [2.22507 x 10^(-308), 1.79769 x 10^(308)]. 15 digit precision.</p></td>
+<td><p>64</p></td>
+<td><p><code>%lf</code> <code>%LF</code><br />
+<code>%lg</code> <code>%LG</code><br />
+<code>%le</code> <code>%LE</code><br />
+<code>%la</code> <code>%LA</code></p></td>
+</tr>
+<tr class="even">
+<td><p><code>long double</code></p></td>
+<td><p>This type has an <i>extended-precision floating point</i>. Ultimate precision -- rarely used.<br/>Modern computers follow the IEEE Standard 754, also known as IEC 60559. <a href="https://en.wikipedia.org/wiki/Quadruple-precision_floating-point_format#IEEE_754_quadruple-precision_binary_floating-point_format:_binary128">Extremely large range</a>. Around 33 digit precision.</p></td>
+<td><p>128</p></td>
+<td><p><code>%Lf</code> <code>%LF</code><br />
+<code>%Lg</code> <code>%LG</code><br />
+<code>%Le</code> <code>%LE</code><br />
+<code>%La</code> <code>%LA</code></p></td>
+</tr>
+</tbody>
+</table>
+
+Use the `<limits.h>` library for a [list of mins and maxs for each data-type](https://docs.microsoft.com/en-us/cpp/c-language/cpp-integer-limits?view=vs-2019).
+
+The table above was initially in `.wiki` or MediaWiki format and was converted to `gfm` or GitHub Flavored Markdown using [Pandoc](
+https://pandoc.org/demos.html). The following the command was used:
+
+
+```bash
+pandoc -w gfm filename.wiki -o filename.md
+```
 
 ### [C Fundamentals](#c-fundamentals)
 
