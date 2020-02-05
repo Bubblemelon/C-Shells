@@ -275,18 +275,24 @@ Debugging tools:
 
 These are links to a separate README.md.
 
-- [Functions](/Misc/Notes/README.md#functions)
+- [C Data Types](#c-data-types)
 
-- [Header Files](/Misc/Notes/README.md#header-files)
+- [C Fundamentals](#c-fundamentals)
 
-- [Interface](/Misc/Notes/README.md#interface)
+- [Functions](#functions)
 
-- [Parameters](/Misc/Notes/README.md#parameters)
+- [Header Files](#header-files)
 
-- [Pointers](/Misc/Notes/README.md#pointers)
+- [Interface](#interface)
 
-- [Preprocessor](/Misc/Notes/README.md#preprocessor)
+- [Macros](#macros)
 
-- [Scope of Identifiers](/Misc/Notes/README.md#scope-of-identifiers)
+- [Parameters](#parameters)
 
-- [Variables](/Notes/README.md#variables)
+- [Pointers](#pointers)
+
+- [Preprocessor](#preprocessor)
+
+- [Scope of Identifiers](#scope-of-identifiers)
+
+- [Variables](#variables)
