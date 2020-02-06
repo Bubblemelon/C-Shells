@@ -92,9 +92,7 @@ a function declaration that omits the body of the function (function body).
 
 <br/>
 
-There are two kinds of kind of subprograms, [void
-functions](https://github.com/Bubblemelon/C-Shells/blob/master/Misc/Notes/README.md#void-funct)
-and **value-returning functions**.
+There are two kinds of kind of subprograms, [voidfunctions](#void-functions) and **value-returning functions**.
 
 #### [Void Functions](#void-functions)
 
