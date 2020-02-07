@@ -360,11 +360,11 @@ to the C Preprocessor.
 **A simplified overview of how C/C++ programs are converted to an executable object**:
 
 ```
-Preprocessing ➞ Compiling ➞ Linking
+Preprocessing ➞ Compiling ➞ Assembly ➞ Linking
 ```
 
 * Compiling:
-  > **Compiler** takes modified code from **preprocessor** or "preprocessed code" and translates it to assembly instructions that are  specific to the target processor architecture.
+  > **Compiler** takes modified code from **preprocessor** or "preprocessed code" and translates it to assembly instructions that are  specific to the target processor architecture. The preprocessor is usually integrated with the compiler.
 
 * Assembly:
   > into machine instructions (object code) and symbol tables.
