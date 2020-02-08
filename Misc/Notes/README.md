@@ -526,6 +526,16 @@ Using `static` on a local variable, will allow its storage lifetime to persist
 from function call to call (this `static` local variable's value is retained
 from call to call).
 
+Remember identifier are case-sensitive, avoid obfuscation e.g. naming having the variable names, `var` and `vAr` in a program isn't meaningful and can cause confusion.
+
+There is no limit on the maximum length of an identifier. C99 Standard requires only the first 63 characters while C89 requires the first 31.
+
+Keywords can't be used as identifiers, and most are e.g. in the standard libary lowercase letters. Avoid using identifiers that begin with an `_` underscore, since it might coincide with a keyword or an already defined function from an included library.
+
+Use camelcase or hypens between words in identifiers.
+
+Groups of characters that can't be split up without changing their meaning are called **tokens**, e.g. operators, string literals, function and variable names.
+
 ### [C Data Types](#c-data-types)
 
 The following table was adapted from [Wikipedia](https://en.wikipedia.org/wiki/C_data_types).
