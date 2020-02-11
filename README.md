@@ -185,13 +185,37 @@ input_file.close();
 
 #### [Tools](#tools):
 
-Compiler versions:
+**Compiler Versions**
 
 `gcc (GCC) 10.2.1 20200723 (Red Hat 10.2.1-1)`
 
 `gcc (Ubuntu 5.5.0-12ubuntu1) 5.5.0 20171010`
 
-Debugging tools:
+General command to compile:
+
+```bash
+gcc -Wall filename.c -o filename
+```
+Since,
+> gnu18
+>
+> GNU dialect of ISO C17 is the default for C code.
+>
+> Use `-std=c99` flag for the C99 standard.
+
+And,
+> `gnu++14`
+>
+> `gnu++1y`
+>
+> GNU dialect of `-std=c++14` is the default for C++ code. `gnu++1y` is deprecated.
+
+
+- Use `g++` for `.cpp`, [see `gcc` vs `g++` discussion](https://stackoverflow.com/questions/172587/what-is-the-difference-between-g-and-gcc).
+
+- See this detailed guide on [how to install, compile and use a `makefile`](https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html).
+
+**Debugging Tools**
 
 `GNU gdb (GDB) Fedora 9.1-6.fc32`
 
