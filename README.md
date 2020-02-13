@@ -23,7 +23,7 @@ Table of Contents:
 
 - [`int main(int argc, char const *argv[])`
   Explained](https://stackoverflow.com/questions/3024197/what-does-int-argc-char-argv-mean)
-> Refer to the [main-args]() folder to test out this explanation.
+> Refer to the [main-args.cpp](Misc/c-fundamentals/main-args.cpp) to test out this explanation.
 
 - [What is a Segmentation
   Fault?](https://stackoverflow.com/questions/2346806/what-is-a-segmentation-fault?rq=1)
