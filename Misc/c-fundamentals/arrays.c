@@ -14,3 +14,9 @@ int largestSubarraySum(int array[], int array_size);
 /* Returns the largest sum from the elements in an array */
 int largestSum(int array[], int array_size);
 
+
+/////////////////////////////////////////////////////////////
+
+int sumIndex0and2( int array[]){
+    return array[0] + array[2];
+}
