@@ -20,3 +20,12 @@ int largestSum(int array[], int array_size);
 int sumIndex0and2( int array[]){
     return array[0] + array[2];
 }
+
+int sumOfSubarray(int array[], int start, int end){
+    int total = 0;
+
+    for(int i = start; i <= end; i++){
+        total += array[i];
+    }
+    return total;
+}
