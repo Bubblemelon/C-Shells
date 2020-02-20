@@ -29,3 +29,22 @@ int sumOfSubarray(int array[], int start, int end){
     }
     return total;
 }
+
+int largestSubarraySum(int array[], int array_size){
+
+    int temp, result = 0;
+
+    for(int i = 0; i < array_size; i++){
+        for(int j = i + 1; j < array_size; j++){
+
+            temp = sumOfSubarray(array, i, j);
+
+            // update result with any larger subarray sum
+            if(result < temp){
+                result = temp;
+            }
+        }
+    }
+
+    return result;
+}
