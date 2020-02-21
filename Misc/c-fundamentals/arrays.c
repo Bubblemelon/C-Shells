@@ -48,3 +48,40 @@ int largestSubarraySum(int array[], int array_size){
 
     return result;
 }
+
+
+
+int largestSubarraySum(int array[], int array_size){
+
+    int temp, result = 0;
+
+    for(int i = 0; i < array_size; i++){
+        for(int j = i + 1; j < array_size; j++){
+
+            temp = sumOfSubarray(array, i, j);
+
+            // update result with any larger subarray sum
+            if(result < temp){
+                result = temp;
+            }
+        }
+    }
+
+    return result;
+}
+
+// find the size of a referenced array is inaccurate
+// int array[] === int *array
+int largestSum(int array[], int array_size){
+
+    int result = 0;
+
+    for(int i = 0; i < array_size; i++){
+
+        if(result < (result + array[i])){
+            result += array[i];
+        }
+    }
+
+    return result;
+}
