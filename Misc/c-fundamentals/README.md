@@ -3,7 +3,22 @@
 A list of programs in C, ordered from simple to complex.
 
 - [C Fundamentals](#c-fundamentals)
+  - [arrays.c](#arraysc)
   - [loan.c](#loanc)
+  - [fahrenheit-to-celsius.c](#fahrenheit-to-celsiusc)
+
+## [arrays.c](#arraysc)
+
+Basic array usage, with four functions that returns:
+
+1. The sum of the 1st and 3rd element.
+2. The sum of all elements a given subarray.
+3. The largest subarray sum.
+4. The largest sum from the elements in an array, e.g. ignores negative elements.
+
+Uses `sizeof()` array over `sizeof()` a single element to find the number of elements in the array.
+
+More notes on implementation in [arrays.c](Misc/c-fundamentals/arrays.c).
 
 ## [loan.c](#loanc)
 
