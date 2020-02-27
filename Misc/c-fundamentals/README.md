@@ -4,6 +4,7 @@ A list of programs in C, ordered from simple to complex.
 
 - [C Fundamentals](#c-fundamentals)
   - [arrays.c](#arraysc)
+  - [digit-sum.c](#digit-sumc)
   - [loan.c](#loanc)
   - [fahrenheit-to-celsius.c](#fahrenheit-to-celsiusc)
 
@@ -19,6 +20,12 @@ Basic array usage, with four functions that returns:
 Uses `sizeof()` array over `sizeof()` a single element to find the number of elements in the array.
 
 More notes on implementation in [arrays.c](Misc/c-fundamentals/arrays.c).
+
+## [digit-sum.c](#digit-sumc)
+
+A program that returns the sum of digits from a user entered number. e.g. given the number `123`, the output would be `6`.
+
+Uses the type `long int` for mutation and formatted printing using the placeholder `%ld`. The modulo operator was used to get Nth place of a digit, from the least significant digit or from right to left of the number, e.g. `3 + 2 + 1 = 6`
 
 ## [loan.c](#loanc)
 
