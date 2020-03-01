@@ -5,3 +5,14 @@
 
 // Note:
 // 0! = 1
+#include<stdio.h>
+
+/* Returns the factorial of n */
+unsigned int factorial(unsigned int n);
+
+unsigned int factorial(unsigned int n){
+    if(n == 0){
+        return 1;
+    }
+    return n * factorial(n-1);
+}
