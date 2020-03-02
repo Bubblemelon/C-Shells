@@ -16,3 +16,26 @@ unsigned int factorial(unsigned int n){
     }
     return n * factorial(n-1);
 }
+
+int main()
+{
+    unsigned int input;
+    unsigned int result = 1;
+
+    printf("\n*** Factorial Calculator ***\n");
+
+    // assumes positive integers
+    printf("\nEnter a number: ");
+    scanf("%u", &input);
+
+    printf("\n%u! using recursion: %d", input, factorial(input));
+
+    for(int i = 2; i <= input; i++){
+
+        result *= i;
+    }
+
+    printf("\n%u! using a for-loop: %d\n", input, result);
+
+    return 0;
+}
