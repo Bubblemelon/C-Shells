@@ -6,7 +6,7 @@ A list of programs in C, ordered from simple to complex.
   - [arrays.c](#arraysc)
   - [digit-sum.c](#digit-sumc)
   - [loan.c](#loanc)
-  - [fahrenheit-to-celsius.c](#fahrenheit-to-celsiusc)
+  - [factorial.c](#factorialc)
 
 ## [arrays.c](#arraysc)
 
@@ -37,3 +37,7 @@ Notes on `float`:
 - Use `%.nf` to specify `n` digits after the decimal point, e.g. `%.3f` is three digits after the decimal point.
 
 More notes on implementation in [loan.c](Misc/c-fundamentals/loan.c).
+
+## [factorial.c](#factorialc)
+
+A classic implementation of the factorial expression, this uses recursion and iteration where both achieves the same result of `n!`.
