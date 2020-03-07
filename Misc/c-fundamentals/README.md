@@ -7,6 +7,7 @@ A list of programs in C, ordered from simple to complex.
   - [digit-sum.c](#digit-sumc)
   - [loan.c](#loanc)
   - [factorial.c](#factorialc)
+  - [fahrenheit-to-celsius.c](#fahrenheit-to-celsiusc)
 
 ## [arrays.c](#arraysc)
 
@@ -41,3 +42,9 @@ More notes on implementation in [loan.c](Misc/c-fundamentals/loan.c).
 ## [factorial.c](#factorialc)
 
 A classic implementation of the factorial expression, this uses recursion and iteration where both achieves the same result of `n!`.
+
+## [fahrenheit-to-celsius.c](#fahrenheit-to-celsiusc)
+
+A program that converts fahrenheit to celsius, using the formula `(°F − 32) × 5/9 = 0°C`.
+
+This program shows the difference between using `int`s and `float`s, the latter adds precision while the former truncates decimals and rounds down, e.g. `0.5` becomes `0`. This program defines the conversion factor as a macro.
