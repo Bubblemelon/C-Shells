@@ -19,6 +19,12 @@ int main()
     printf("Enter the second number: ");
     scanf("%d", &num2);
 
+    // Using this expression because we do not know which num is larger:
+    // "i <= num1 && i <= num2"
+    //
+    // Otherwise,
+    // if num1 > num2, then limit = num2,
+    // so the for-loop middle expression becomes "i <= limit"
     for(int i=1; i <= num1 && i <= num2; ++i)
     {
         // both numbers must share the same divisible factor
