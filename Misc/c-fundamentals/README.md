@@ -8,6 +8,7 @@ A list of programs in C, ordered from simple to complex.
   - [loan.c](#loanc)
   - [factorial.c](#factorialc)
   - [fahrenheit-to-celsius.c](#fahrenheit-to-celsiusc)
+  - [gcd.c](#gcdc)
 
 ## [arrays.c](#arraysc)
 
@@ -48,3 +49,7 @@ A classic implementation of the factorial expression, this uses recursion and it
 A program that converts fahrenheit to celsius, using the formula `(°F − 32) × 5/9 = 0°C`.
 
 This program shows the difference between using `int`s and `float`s, the latter adds precision while the former truncates decimals and rounds down, e.g. `0.5` becomes `0`. This program defines the conversion factor as a macro.
+
+## [gcd.c](#gcdc)
+
+A classic implementation of finding the greatest common divisor (GCD) between two values as user input.
