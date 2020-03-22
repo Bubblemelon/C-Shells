@@ -53,3 +53,21 @@ void printStarRecurse(int n, int start){
 
     return printStarRecurse( n, start + 1 );
 }
+
+
+void printStarRecurseD(int n){
+
+    //base case
+    if( n == 0 ){
+        return;
+    }
+
+    int count = 0;
+    while( count < n ){
+        printf("*");
+        count++;
+    }
+    printf("\n");
+
+    return printStarRecurseD( n - 1 );
+}
