@@ -71,3 +71,24 @@ void printStarRecurseD(int n){
 
     return printStarRecurseD( n - 1 );
 }
+
+int main()
+{
+    int input;
+
+    printf("\n*** Print Half a Christmas Tree with Stars (Asterisks) ***\n");
+    printf("Enter the height or levels of stars to print: ");
+
+    scanf("%d", &input);
+
+    printf("\nThis was printed using iteration: ");
+    printStar(input);
+
+    printf("\nThis was printed using recursion:\n");
+    printStarRecurse(input, 0);
+
+    printf("\nThis was printed (upside down) using recursion:\n");
+    printStarRecurseD(input);
+
+    return 0;
+}
