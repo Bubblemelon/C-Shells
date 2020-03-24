@@ -11,6 +11,8 @@ This program prints half a christmas tree.
 ********
 *********
 
+e.g. when n = 9, there will be 9 levels of stars printed. The number of stars on a level is the same as the level number, e.g. level 3 has 3 stars.
+
 */
 
 #include <stdio.h>
