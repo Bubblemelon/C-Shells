@@ -9,6 +9,7 @@ A list of programs in C, ordered from simple to complex.
   - [factorial.c](#factorialc)
   - [fahrenheit-to-celsius.c](#fahrenheit-to-celsiusc)
   - [gcd.c](#gcdc)
+  - [half-tree-star.c](#half-tree-starc)
 
 ## [arrays.c](#arraysc)
 
@@ -53,3 +54,9 @@ This program shows the difference between using `int`s and `float`s, the latter 
 ## [gcd.c](#gcdc)
 
 A classic implementation of finding the greatest common divisor (GCD) between two values as user input.
+
+## [half-tree-star.c](#half-tree-starc)
+
+This program prints half a Christmas tree using asterisks or the `*` star symbol. No specific C concepts in particular, this is to show the different ways to achieve the same result e.g. via recursion or with iteration.
+
+See [half-tree-star.c](Misc/c-fundamentals/half-tree-stars.c) for example output.
