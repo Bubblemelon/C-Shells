@@ -20,3 +20,11 @@ bool isDigit(char c){
     }
     return false;
 }
+
+bool isLower(char c){
+
+    if( c >= 97 && c <= 122 ){
+        return true;
+    }
+    return false;
+}
