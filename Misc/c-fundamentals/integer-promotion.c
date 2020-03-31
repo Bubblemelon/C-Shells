@@ -12,3 +12,11 @@
 bool isDigit(char c); /*Returns true if c is a digit.*/
 bool isLower(char c); /*Returns true if c is an uppercase letter.*/
 bool isUpper(char c); /*Returns true if c is a lowercase letter.*/
+
+bool isDigit(char c){
+
+    if( c >= 48 && c <= 57 ){
+        return true;
+    }
+    return false;
+}
