@@ -28,3 +28,11 @@ bool isLower(char c){
     }
     return false;
 }
+
+bool isUpper(char c){
+
+    if( c >= 65 && c <= 90 ){
+        return true;
+    }
+    return false;
+}
