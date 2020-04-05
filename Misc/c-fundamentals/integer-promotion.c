@@ -36,3 +36,49 @@ bool isUpper(char c){
     }
     return false;
 }
+
+int main()
+{
+    char input;
+    /* Suppose that i and j are variables of type int. What is the type of the expression i / j + 'a'? */
+
+    // 'a' which has the type char will be automatically promoted to an int.
+    // This is called Integer Promotion.
+
+    // let i and j be the following values:
+    int i = 1, j =2;
+    char a = 'a';
+
+    printf("\nEvaluate the expression: i + j + 'a':\n");
+    printf("(int i=%d) + (int j=%d) + (char 'a' in ASCII Decimal is %d) = %d \n", i, j, a, i+j+a);
+
+    // The result fo the above printf statement is:
+    // (int i=1) + (int j=2) + (char 'a' in ASCII Decimal is 97) = 100
+
+    printf("\n*** Character attributes ***\n");
+    printf("\nEnter a character: ");
+    scanf("%c", &input);
+
+    if(isDigit(input)){
+        printf("\n'%c' is a digit.", input);
+    }else{
+        printf("\n'%c' is not a digit.", input);
+    }
+
+    if(isLower(input)){
+        printf("\n'%c' is a lowercase letter.", input);
+    }else{
+        printf("\n'%c' is not a lowercase letter.", input);
+    }
+
+    if(isUpper(input)){
+        printf("\n'%c' is an uppercase letter.", input);
+    }else{
+        printf("\n'%c' is not an uppercase letter.", input);
+    }
+
+    printf("\n");
+
+    return 0;
+}
+
