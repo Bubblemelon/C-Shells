@@ -86,4 +86,12 @@ int main(){
 
     return 0;
 
+    /* NOTES
+
+    The time it takes to guess PASS_* depends on the where the value is between the data type's lower and upper bounds. E.g. if PASS_*'s is numeric value '0', then 'unsigned long' and 'unsigned int' will be faster than 'short int'. This is because the range for 'short int' extents to negative values. Hence, to guess PASS_* in 'short int' would need to go through all negative values before getting to '0'.
+
+    'unsigned' data types cannot handle negative values, so if PASS_* were
+    in fact a negative value. `unsigned int` and `unsigned long` will take the
+    longest to run since the inaccurate conversion of a negative value approaches their type's maximum/upper bound.
+    */
 }
