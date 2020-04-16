@@ -11,6 +11,7 @@ A list of programs in C, ordered from simple to complex.
   - [half-tree-star.c](#half-tree-starc)
   - [integer-promotion.c](#integer-promotionc)
   - [loan.c](#loanc)
+  - [max-values.c](#max-valuesc)
 
 ## [arrays.c](#arraysc)
 
@@ -73,3 +74,9 @@ Notes on `float`:
 - Use `%.nf` to specify `n` digits after the decimal point, e.g. `%.3f` is three digits after the decimal point.
 
 More notes on implementation in [loan.c](Misc/c-fundamentals/loan.c).
+
+## [max-values.c](#max-valuesc)
+
+A program that utilizes `limits.h`, and `time.h`. The purpose is to demonstrate a data type's numeric min and max range, and the amount of time it takes to iterate the entire range. The data types measured are `short int`, `unsigned int` and `unsigned long`.
+
+See extensive notes on implementation in [max-values.c](Misc/c-fundamentals/max-values.c).
