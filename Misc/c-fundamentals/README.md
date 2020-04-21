@@ -12,6 +12,7 @@ A list of programs in C, ordered from simple to complex.
   - [integer-promotion.c](#integer-promotionc)
   - [loan.c](#loanc)
   - [max-values.c](#max-valuesc)
+  - [month-number.c](#month-numberc)
 
 ## [arrays.c](#arraysc)
 
@@ -80,3 +81,7 @@ More notes on implementation in [loan.c](Misc/c-fundamentals/loan.c).
 A program that utilizes `limits.h`, and `time.h`. The purpose is to demonstrate a data type's numeric min and max range, and the amount of time it takes to iterate the entire range. The data types measured are `short int`, `unsigned int` and `unsigned long`.
 
 See extensive notes on implementation in [max-values.c](Misc/c-fundamentals/max-values.c).
+
+## [month-number.c](#month-numberc)
+
+A simple program to demonstrate the use of a `switch` statement and a user prompt loop that handles invalid data that is not between the numbers `1` to `12` inclusive. As per convention, numeric value `1` represents `January` and so on.
