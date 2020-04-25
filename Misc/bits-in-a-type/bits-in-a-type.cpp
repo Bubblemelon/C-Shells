@@ -28,3 +28,12 @@ template <typename T>
 void printTypeNumBits(unsigned short bits, string t);
 
 ////////////////////////////////////////////////////////////////////////////////
+
+constexpr unsigned short bits_per_byte()
+{
+ int bit = 0;
+
+ for (char c = 1; c != 0; ++bit)
+ 	c = c* 2;
+ return bit;
+}
