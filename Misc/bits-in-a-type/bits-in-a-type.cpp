@@ -37,3 +37,9 @@ constexpr unsigned short bits_per_byte()
  	c = c* 2;
  return bit;
 }
+
+template <typename T>
+size_t bits_in_a_type()
+{
+    return sizeof(T) * (CHAR_BIT);
+}
