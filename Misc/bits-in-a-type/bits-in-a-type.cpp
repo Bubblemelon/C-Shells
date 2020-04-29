@@ -49,3 +49,30 @@ void print_num_bits_in_type(const unsigned short bits, string t){
 
 	cout << t << " : " << bits*sizeof(T) << '\n';
 }
+
+int main()
+{
+	constexpr unsigned short bits = bits_per_byte();
+
+	printf("\n---Find bits in a type using CHAR_BITS ---\n");
+    printf("uint8_t : %d\n", bits_in_a_type<uint8_t>());
+	printf("size_t : %d\n", bits_in_a_type<size_t>());
+    printf("long long : %d\n", bits_in_a_type<long long>());
+    printf("void* : %d\n", bits_in_a_type<void*>());
+    printf("bool : %d\n", bits_in_a_type<bool>());
+    printf("float : %d\n", bits_in_a_type<float>());
+    printf("double : %d\n", bits_in_a_type<double>());
+    printf("long double : %d\n", bits_in_a_type<long double>());
+
+	printf("\n---Find bits in a type W/O using CHAR_BITS ---\n");
+	print_num_bits_in_type<uint8_t>(bits, "uint8_t");
+	print_num_bits_in_type<size_t>(bits, "size_t");
+	print_num_bits_in_type<long long>(bits, "long long");
+	print_num_bits_in_type<void*>(bits, "void*");
+	print_num_bits_in_type<bool>(bits, "bool");
+	print_num_bits_in_type<float>(bits, "float");
+	print_num_bits_in_type<double>(bits, "double");
+	print_num_bits_in_type<long double>(bits, "long double");
+
+	return 0;
+}
