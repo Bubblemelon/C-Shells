@@ -25,7 +25,7 @@ size_t bits_in_a_type();
 
 // prints the number of bytes in a type, takes string t for printing
 template <typename T>
-void printTypeNumBits(unsigned short bits, string t);
+void print_num_bits_in_type(unsigned short bits, string t);
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -42,4 +42,10 @@ template <typename T>
 size_t bits_in_a_type()
 {
     return sizeof(T) * (CHAR_BIT);
+}
+
+template <typename T>
+void print_num_bits_in_type(const unsigned short bits, string t){
+
+	cout << t << " : " << bits*sizeof(T) << '\n';
 }
