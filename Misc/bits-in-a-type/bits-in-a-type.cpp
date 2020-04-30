@@ -76,3 +76,27 @@ int main()
 
 	return 0;
 }
+
+/******* Sample Output
+
+---Find bits in a type using CHAR_BITS ---
+uint8_t : 8
+size_t : 64
+long long : 64
+void* : 64
+bool : 8
+float : 32
+double : 64
+long double : 128
+
+---Find bits in a type W/O using CHAR_BITS ---
+uint8_t : 8
+size_t : 64
+long long : 64
+void* : 64
+bool : 8
+float : 32
+double : 64
+long double : 128
+
+********/
