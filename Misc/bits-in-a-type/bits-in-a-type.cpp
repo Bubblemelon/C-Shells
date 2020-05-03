@@ -77,6 +77,12 @@ int main()
 	return 0;
 }
 
+/* Example Compile command:
+ *
+ * g++ -O2 -g bits-in-a-type.c
+ *
+ */
+
 /******* Sample Output
 
 ---Find bits in a type using CHAR_BITS ---
