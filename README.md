@@ -299,24 +299,24 @@ And,
 
 These are links to a separate README.md.
 
-- [C Data Types](#c-data-types)
+- [C Data Types](Misc/c-fundamentals/README.md#c-data-types)
 
-- [C Fundamentals](#c-fundamentals)
+- [C Fundamentals](Misc/c-fundamentals/README.md#c-fundamentals)
 
-- [Functions](#functions)
+- [Functions](Misc/c-fundamentals/README.md#functions)
 
-- [Header Files](#header-files)
+- [Header Files](Misc/c-fundamentals/README.md#header-files)
 
-- [Interface](#interface)
+- [Interface](Misc/c-fundamentals/README.md#interface)
 
-- [Macros](#macros)
+- [Macros](Misc/c-fundamentals/README.md#macros)
 
-- [Parameters](#parameters)
+- [Parameters](Misc/c-fundamentals/README.md#parameters)
 
-- [Pointers](#pointers)
+- [Pointers](Misc/c-fundamentals/README.md#pointers)
 
-- [Preprocessor](#preprocessor)
+- [Preprocessor](Misc/c-fundamentals/README.md#preprocessor)
 
-- [Scope of Identifiers](#scope-of-identifiers)
+- [Scope of Identifiers](Misc/c-fundamentals/README.md#scope-of-identifiers)
 
-- [Variables](#variables)
+- [Variables](Misc/c-fundamentals/README.md#variables)
