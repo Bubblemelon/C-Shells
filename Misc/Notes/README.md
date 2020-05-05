@@ -673,6 +673,6 @@ pandoc -w gfm filename.wiki -o filename.md
 
 ### [C Fundamentals](#c-fundamentals)
 
-A [list of programs in C](Misc/c-fundamentals/README.md) ordered from ascending complexity, where concepts build from each other.
+A [list of programs in C](../Misc/c-fundamentals/README.md) ordered from ascending complexity, where concepts build from each other.
 
 [Go back to the TOP 🔝 of this page.](#my-cc-notes)
