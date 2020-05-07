@@ -558,74 +558,74 @@ The following table was adapted from [Wikipedia](https://en.wikipedia.org/wiki/C
 </tr>
 <tr class="even">
 <td><p><code>signed char</code></p></td>
-<td><p>Similar size to <code>char</code>, but not always <code>signed</code>. Represents the minimum [−127 , +127] range.</p></td>
+<td><p>Represents the minimum [−127 , +127] range.</p></td>
 <td><p>8</p></td>
 <td><p><code>%c</code> <small>( use <code>%hhi</code> for numerical output )</small></p></td>
 </tr>
 <tr class="odd">
 <td><p><code>unsigned char</code></p></td>
-<td><p>Similar size as <code>char</code>, but not always <code>unsigned</code>. Represents the minimum [0, 255] range.</p></td>
+<td><p>Represents the minimum [0, 255] range.</p></td>
 <td><p>8</p></td>
 <td><p><code>%c</code> <small>( use <code>%hhu</code> for numerical output )</small></p></td>
 </tr>
 <tr class="even">
-<td><p><code>short</code><br />
-<code>short int</code><br />
-<code>signed short</code><br />
+<td><p><code>short</code><br /><br />
+<code>short int</code><br /><br />
+<code>signed short</code><br /><br />
 <code>signed short int</code></p></td>
 <td><p>Represents the minimum [−32,767 , +32,767] range.]</p></td>
 <td><p>16</p></td>
 <td><p><code>%hi</code> <br/> <code>%hd</code></p></td>
 </tr>
 <tr class="odd">
-<td><p><code>unsigned short</code><br />
+<td><p><code>unsigned short</code><br /><br />
 <code>unsigned short int</code></p></td>
 <td><p>Represents the minimum the [0, 65,535] range.</p></td>
 <td><p>16</p></td>
 <td><p><code>%hu</code></p></td>
 </tr>
 <tr class="even">
-<td><p><code>int</code><br />
-<code>signed</code><br />
-<code>signed int</code></p></td>
+<td><p><code>int</code><br /><br />
+<code>signed</code><br /><br />
+<code>signed int</code></p></td><br />
 <td><p>Represents the minimumthe [−32,767 , +32,767] range.</p></td>
 <td><p>16</p></td>
 <td><p><code>%i</code> <br/> <code>%d</code></p></td>
 </tr>
 <tr class="odd">
-<td><p><code>unsigned</code><br />
+<td><p><code>unsigned</code><br /><br />
 <code>unsigned int</code></p></td>
 <td><p>Represents the minimum [0, 65,535] range.</p></td>
 <td><p>16</p></td>
 <td><p><code>%u</code></p></td>
 </tr>
 <tr class="even">
-<td><p><code>long</code><br />
-<code>long int</code><br />
-<code>signed long</code><br />
+<td><p><code>long</code><br /><br />
+<code>long int</code><br /><br />
+<code>signed long</code><br /><br />
 <code>signed long int</code></p></td>
 <td><p>Represents the minimum <br/> [−2,147,483,647 , +2,147,483,647] range.</p></td>
 <td><p>32</p></td>
 <td><p><code>%li</code> <br/> <code>%ld</code></p></td>
 </tr>
 <tr class="odd">
-<td><p><code>unsigned long</code><br />
+<td><p><code>unsigned long</code><br /><br />
 <code>unsigned long int</code></p></td>
 <td><p>Represents the minimum [0, 4,294,967,295] range.</p></td>
 <td><p>32</p></td>
 <td><p><code>%lu</code></p></td>
 </tr>
 <tr class="even">
-<td><p><code>long long</code><br />
-<code>long long int</code><br />
-<code>signed long long</code><br />
+<td><p><code>long long</code><br /><br />
+<code>long long int</code><br /><br />
+<code>signed long long</code><br /><br />
 <code>signed long long int</code></p></td>
 <td><p>Represents the minimum <br> [−9,223,372,036,854,775,807 , +9,223,372,036,854,775,807] range. Introduced in the C99 Standard.</p></td>
 <td><p>64</p></td>
 <td><p><code>%lli</code> </br> <code>%lld</code></p></td>
 </tr>
 <tr class="odd">
-<td><p><code>unsigned long long</code><br />
+<td><p><code>unsigned long long</code><br /><br />
 <code>unsigned long long int</code></p></td>
 <td><p>Represents the minimum [0, +18,446,744,073,709,551,615] range.  Introduced in the C99 Standard.</p></td>
 <td><p>64</p></td>
